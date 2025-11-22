@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/joezeiad/Desktop/Workspace/table-shift/apps/web/landing/instrumentation-client.ts"],"sourcesContent":["import posthog from \"posthog-js\"\n\nposthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY!, {\n  api_host: \"/ingest\",\n  ui_host: \"https://us.posthog.com\",\n  defaults: '2025-05-24',\n  capture_exceptions: true, // This enables capturing exceptions using Error Tracking\n  debug: process.env.NODE_ENV === \"development\",\n});\n"],"names":[],"mappings":";AAEa;AAFb;;AAEA,yNAAO,CAAC,IAAI,qFAAuC;IACjD,UAAU;IACV,SAAS;IACT,UAAU;IACV,oBAAoB;IACpB,OAAO,oDAAyB;AAClC","debugId":null}}]
+}

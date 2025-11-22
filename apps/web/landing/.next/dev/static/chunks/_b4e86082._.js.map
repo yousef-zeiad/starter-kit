@@ -1,0 +1,96 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {
+      "offset": {
+        "line": 4,
+        "column": 0
+      },
+      "map": {
+        "version": 3,
+        "sources": [
+          "file:///Users/joezeiad/Desktop/Workspace/table-shift/packages/ui/src/separator.tsx"
+        ],
+        "sourcesContent": [
+          "\"use client\";\n\nimport { Separator as SeparatorPrimitive } from \"radix-ui\";\n\nimport { cn } from \"@trading-platform/ui\";\n\nexport function Separator({\n  className,\n  orientation = \"horizontal\",\n  decorative = true,\n  ...props\n}: React.ComponentProps<typeof SeparatorPrimitive.Root>) {\n  return (\n    <SeparatorPrimitive.Root\n      data-slot=\"separator\"\n      decorative={decorative}\n      orientation={orientation}\n      className={cn(\n        \"bg-border shrink-0 data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-px\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n"
+        ],
+        "names": [],
+        "mappings": ";;;;;AAEA;AAEA;AAJA;;;;AAMO,SAAS,UAAU,EACxB,SAAS,EACT,cAAc,YAAY,EAC1B,aAAa,IAAI,EACjB,GAAG,OACkD;IACrD,qBACE,gXAAC,2aAAkB,CAAC,IAAI;QACtB,aAAU;QACV,YAAY;QACZ,aAAa;QACb,WAAW,IAAA,uIAAE,EACX,kKACA;QAED,GAAG,KAAK;;;;;;AAGf;KAlBgB",
+        "debugId": null
+      }
+    },
+    {
+      "offset": {
+        "line": 38,
+        "column": 0
+      },
+      "map": {
+        "version": 3,
+        "sources": [
+          "file:///Users/joezeiad/Desktop/Workspace/table-shift/packages/ui/src/accordion.tsx"
+        ],
+        "sourcesContent": [
+          "\"use client\";\n\nimport * as React from \"react\";\nimport * as AccordionPrimitive from \"@radix-ui/react-accordion\";\nimport { ChevronDownIcon } from \"lucide-react\";\n\nimport { cn } from \"@trading-platform/ui\";\n\nfunction Accordion({\n  ...props\n}: React.ComponentProps<typeof AccordionPrimitive.Root>) {\n  return <AccordionPrimitive.Root data-slot=\"accordion\" {...props} />;\n}\n\nfunction AccordionItem({\n  className,\n  ...props\n}: React.ComponentProps<typeof AccordionPrimitive.Item>) {\n  return (\n    <AccordionPrimitive.Item\n      data-slot=\"accordion-item\"\n      className={cn(\"border-b last:border-b-0\", className)}\n      {...props}\n    />\n  );\n}\n\nfunction AccordionTrigger({\n  className,\n  children,\n  ...props\n}: React.ComponentProps<typeof AccordionPrimitive.Trigger>) {\n  return (\n    <AccordionPrimitive.Header className=\"flex\">\n      <AccordionPrimitive.Trigger\n        data-slot=\"accordion-trigger\"\n        className={cn(\n          \"focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180\",\n          className,\n        )}\n        {...props}\n      >\n        {children}\n        <ChevronDownIcon className=\"text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200\" />\n      </AccordionPrimitive.Trigger>\n    </AccordionPrimitive.Header>\n  );\n}\n\nfunction AccordionContent({\n  className,\n  children,\n  ...props\n}: React.ComponentProps<typeof AccordionPrimitive.Content>) {\n  return (\n    <AccordionPrimitive.Content\n      data-slot=\"accordion-content\"\n      className=\"data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm\"\n      {...props}\n    >\n      <div className={cn(\"pt-0 pb-4\", className)}>{children}</div>\n    </AccordionPrimitive.Content>\n  );\n}\n\nexport { Accordion, AccordionItem, AccordionTrigger, AccordionContent };\n"
+        ],
+        "names": [],
+        "mappings": ";;;;;;;;;;;AAGA;AACA;AAEA;AANA;;;;;AAQA,SAAS,UAAU,EACjB,GAAG,OACkD;IACrD,qBAAO,gXAAC,iYAAuB;QAAC,aAAU;QAAa,GAAG,KAAK;;;;;;AACjE;KAJS;AAMT,SAAS,cAAc,EACrB,SAAS,EACT,GAAG,OACkD;IACrD,qBACE,gXAAC,iYAAuB;QACtB,aAAU;QACV,WAAW,IAAA,uIAAE,EAAC,4BAA4B;QACzC,GAAG,KAAK;;;;;;AAGf;MAXS;AAaT,SAAS,iBAAiB,EACxB,SAAS,EACT,QAAQ,EACR,GAAG,OACqD;IACxD,qBACE,gXAAC,mYAAyB;QAAC,WAAU;kBACnC,cAAA,gXAAC,oYAA0B;YACzB,aAAU;YACV,WAAW,IAAA,uIAAE,EACX,8SACA;YAED,GAAG,KAAK;;gBAER;8BACD,gXAAC,kUAAe;oBAAC,WAAU;;;;;;;;;;;;;;;;;AAInC;MApBS;AAsBT,SAAS,iBAAiB,EACxB,SAAS,EACT,QAAQ,EACR,GAAG,OACqD;IACxD,qBACE,gXAAC,oYAA0B;QACzB,aAAU;QACV,WAAU;QACT,GAAG,KAAK;kBAET,cAAA,gXAAC;YAAI,WAAW,IAAA,uIAAE,EAAC,aAAa;sBAAa;;;;;;;;;;;AAGnD;MAdS",
+        "debugId": null
+      }
+    },
+    {
+      "offset": {
+        "line": 142,
+        "column": 0
+      },
+      "map": {
+        "version": 3,
+        "sources": [
+          "file:///Users/joezeiad/Desktop/Workspace/table-shift/packages/ui/src/circular-progress.tsx"
+        ],
+        "sourcesContent": [
+          "\"use client\";\n\nimport * as React from \"react\";\n\nimport { cn } from \"@trading-platform/ui\";\n\ninterface CircularProgressProps {\n  value: number; // Number of registered items (0-max)\n  max?: number; // Maximum spots (default 50)\n  size?: number; // Size of the circle in pixels\n  strokeWidth?: number; // Width of the stroke\n  showValue?: boolean; // Whether to show the maximum waitlist spots in the center\n  className?: string;\n}\n\nfunction CircularProgress({\n  value,\n  max = 50,\n  size = 32,\n  strokeWidth = 3,\n  showValue = true,\n  className,\n}: CircularProgressProps) {\n  const remaining = Math.max(0, max - value);\n  const percentage = Math.min(100, Math.max(0, (value / max) * 100));\n\n  // SVG circle calculations\n  const center = size / 2;\n  const radius = (size - strokeWidth) / 2;\n  const circumference = 2 * Math.PI * radius;\n  const offset = circumference - (percentage / 100) * circumference;\n\n  return (\n    <div className={cn(\"relative inline-flex\", className)}>\n      <svg\n        width={size}\n        height={size}\n        className=\"-rotate-90 transform\"\n        style={{ width: size, height: size }}\n      >\n        {/* Background circle (light gray) */}\n        <circle\n          cx={center}\n          cy={center}\n          r={radius}\n          fill=\"none\"\n          stroke=\"currentColor\"\n          strokeWidth={strokeWidth}\n          className=\"text-black/10\"\n        />\n        {/* Progress circle (black) */}\n        <circle\n          cx={center}\n          cy={center}\n          r={radius}\n          fill=\"none\"\n          stroke=\"currentColor\"\n          strokeWidth={strokeWidth}\n          strokeDasharray={circumference}\n          strokeDashoffset={offset}\n          strokeLinecap=\"round\"\n          className=\"text-black transition-all duration-300\"\n        />\n      </svg>\n      {/* Center text showing maximum waitlist spots */}\n      {showValue && (\n        <span className=\"absolute inset-0 flex items-center justify-center text-xs font-semibold text-black\">\n          {remaining}\n        </span>\n      )}\n    </div>\n  );\n}\n\nexport { CircularProgress, type CircularProgressProps };\n"
+        ],
+        "names": [],
+        "mappings": ";;;;;AAIA;AAJA;;;AAeA,SAAS,iBAAiB,EACxB,KAAK,EACL,MAAM,EAAE,EACR,OAAO,EAAE,EACT,cAAc,CAAC,EACf,YAAY,IAAI,EAChB,SAAS,EACa;IACtB,MAAM,YAAY,KAAK,GAAG,CAAC,GAAG,MAAM;IACpC,MAAM,aAAa,KAAK,GAAG,CAAC,KAAK,KAAK,GAAG,CAAC,GAAG,AAAC,QAAQ,MAAO;IAE7D,0BAA0B;IAC1B,MAAM,SAAS,OAAO;IACtB,MAAM,SAAS,CAAC,OAAO,WAAW,IAAI;IACtC,MAAM,gBAAgB,IAAI,KAAK,EAAE,GAAG;IACpC,MAAM,SAAS,gBAAgB,AAAC,aAAa,MAAO;IAEpD,qBACE,gXAAC;QAAI,WAAW,IAAA,uIAAE,EAAC,wBAAwB;;0BACzC,gXAAC;gBACC,OAAO;gBACP,QAAQ;gBACR,WAAU;gBACV,OAAO;oBAAE,OAAO;oBAAM,QAAQ;gBAAK;;kCAGnC,gXAAC;wBACC,IAAI;wBACJ,IAAI;wBACJ,GAAG;wBACH,MAAK;wBACL,QAAO;wBACP,aAAa;wBACb,WAAU;;;;;;kCAGZ,gXAAC;wBACC,IAAI;wBACJ,IAAI;wBACJ,GAAG;wBACH,MAAK;wBACL,QAAO;wBACP,aAAa;wBACb,iBAAiB;wBACjB,kBAAkB;wBAClB,eAAc;wBACd,WAAU;;;;;;;;;;;;YAIb,2BACC,gXAAC;gBAAK,WAAU;0BACb;;;;;;;;;;;;AAKX;KAzDS",
+        "debugId": null
+      }
+    },
+    {
+      "offset": {
+        "line": 232,
+        "column": 0
+      },
+      "map": {
+        "version": 3,
+        "sources": [
+          "file:///Users/joezeiad/Desktop/Workspace/table-shift/apps/web/landing/src/components/landing/waitlist-constants.ts"
+        ],
+        "sourcesContent": [
+          "// Waitlist configuration constants\nexport const WAITLIST_CONFIG = {\n  maxSpots: 50,\n} as const;\n\nexport interface WaitlistStats {\n  registeredCount: number;\n  remaining: number;\n  maxSpots: number;\n  isFull: boolean;\n}\n\n/**\n * Fetch waitlist stats from API\n */\nexport async function fetchWaitlistStats(): Promise<WaitlistStats> {\n  try {\n    const response = await fetch(\"/api/waitlist/stats\", {\n      cache: \"no-store\", // Always fetch fresh data\n    });\n\n    if (!response.ok) {\n      throw new Error(\"Failed to fetch waitlist stats\");\n    }\n\n    const result = await response.json();\n    if (result.success && result.data) {\n      return {\n        maxSpots: result.data.maxSpots,\n        registeredCount: result.data.registeredCount,\n        remaining: result.data.remaining,\n        isFull: result.data.isFull,\n      };\n    }\n\n    throw new Error(\"Invalid response format\");\n  } catch (error) {\n    console.error(\"Error fetching waitlist stats:\", error);\n    // Return defaults on error\n    return {\n      maxSpots: WAITLIST_CONFIG.maxSpots,\n      registeredCount: 0,\n      remaining: WAITLIST_CONFIG.maxSpots,\n      isFull: false,\n    };\n  }\n}\n"
+        ],
+        "names": [],
+        "mappings": "AAAA,mCAAmC;;;;;;;AAC5B,MAAM,kBAAkB;IAC7B,UAAU;AACZ;AAYO,eAAe;IACpB,IAAI;QACF,MAAM,WAAW,MAAM,MAAM,uBAAuB;YAClD,OAAO;QACT;QAEA,IAAI,CAAC,SAAS,EAAE,EAAE;YAChB,MAAM,IAAI,MAAM;QAClB;QAEA,MAAM,SAAS,MAAM,SAAS,IAAI;QAClC,IAAI,OAAO,OAAO,IAAI,OAAO,IAAI,EAAE;YACjC,OAAO;gBACL,UAAU,OAAO,IAAI,CAAC,QAAQ;gBAC9B,iBAAiB,OAAO,IAAI,CAAC,eAAe;gBAC5C,WAAW,OAAO,IAAI,CAAC,SAAS;gBAChC,QAAQ,OAAO,IAAI,CAAC,MAAM;YAC5B;QACF;QAEA,MAAM,IAAI,MAAM;IAClB,EAAE,OAAO,OAAO;QACd,QAAQ,KAAK,CAAC,kCAAkC;QAChD,2BAA2B;QAC3B,OAAO;YACL,UAAU,gBAAgB,QAAQ;YAClC,iBAAiB;YACjB,WAAW,gBAAgB,QAAQ;YACnC,QAAQ;QACV;IACF;AACF",
+        "debugId": null
+      }
+    },
+    {
+      "offset": {
+        "line": 278,
+        "column": 0
+      },
+      "map": {
+        "version": 3,
+        "sources": [
+          "file:///Users/joezeiad/Desktop/Workspace/table-shift/apps/web/landing/src/components/landing/use-waitlist-stats.tsx"
+        ],
+        "sourcesContent": [
+          "\"use client\";\n\nimport { useEffect, useState } from \"react\";\n\nimport type { WaitlistStats } from \"./waitlist-constants\";\nimport { WAITLIST_CONFIG, fetchWaitlistStats } from \"./waitlist-constants\";\n\n/**\n * Hook to fetch and manage waitlist statistics\n */\nexport function useWaitlistStats() {\n  const [stats, setStats] = useState<WaitlistStats>({\n    registeredCount: 0,\n    remaining: WAITLIST_CONFIG.maxSpots,\n    maxSpots: WAITLIST_CONFIG.maxSpots,\n    isFull: false,\n  });\n  const [isLoading, setIsLoading] = useState(true);\n  const [error, setError] = useState<Error | null>(null);\n\n  useEffect(() => {\n    async function loadStats() {\n      try {\n        setIsLoading(true);\n        setError(null);\n        const data = await fetchWaitlistStats();\n        setStats(data);\n      } catch (err) {\n        setError(err instanceof Error ? err : new Error(\"Unknown error\"));\n        console.error(\"Failed to load waitlist stats:\", err);\n      } finally {\n        setIsLoading(false);\n      }\n    }\n\n    loadStats();\n\n    // Refresh every 30 seconds\n    const interval = setInterval(loadStats, 30000);\n\n    return () => clearInterval(interval);\n  }, []);\n\n  return { stats, isLoading, error };\n}\n\n"
+        ],
+        "names": [],
+        "mappings": ";;;;AAEA;AAGA;;AALA;;;AAUO,SAAS;;IACd,MAAM,CAAC,OAAO,SAAS,GAAG,IAAA,4VAAQ,EAAgB;QAChD,iBAAiB;QACjB,WAAW,qMAAe,CAAC,QAAQ;QACnC,UAAU,qMAAe,CAAC,QAAQ;QAClC,QAAQ;IACV;IACA,MAAM,CAAC,WAAW,aAAa,GAAG,IAAA,4VAAQ,EAAC;IAC3C,MAAM,CAAC,OAAO,SAAS,GAAG,IAAA,4VAAQ,EAAe;IAEjD,IAAA,6VAAS;sCAAC;YACR,eAAe;gBACb,IAAI;oBACF,aAAa;oBACb,SAAS;oBACT,MAAM,OAAO,MAAM,IAAA,wMAAkB;oBACrC,SAAS;gBACX,EAAE,OAAO,KAAK;oBACZ,SAAS,eAAe,QAAQ,MAAM,IAAI,MAAM;oBAChD,QAAQ,KAAK,CAAC,kCAAkC;gBAClD,SAAU;oBACR,aAAa;gBACf;YACF;YAEA;YAEA,2BAA2B;YAC3B,MAAM,WAAW,YAAY,WAAW;YAExC;8CAAO,IAAM,cAAc;;QAC7B;qCAAG,EAAE;IAEL,OAAO;QAAE;QAAO;QAAW;IAAM;AACnC;GAlCgB",
+        "debugId": null
+      }
+    }
+  ]
+}

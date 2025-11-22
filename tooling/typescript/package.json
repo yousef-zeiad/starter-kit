@@ -1,0 +1,7 @@
+{
+  "name": "@trading-platform/tsconfig",
+  "private": true,
+  "files": [
+    "*.json"
+  ]
+}

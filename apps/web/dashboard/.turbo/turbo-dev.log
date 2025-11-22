@@ -1,0 +1,8 @@
+
+> @trading-platform/dashboard@ dev /Users/joezeiad/Desktop/Workspace/trading-platform/apps/web/dashboard
+> pnpm with-env next dev
+
+
+> @trading-platform/dashboard@ with-env /Users/joezeiad/Desktop/Workspace/trading-platform/apps/web/dashboard
+> dotenv -e ../../.env -- next dev
+

@@ -1,0 +1,42 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {
+      "offset": {
+        "line": 4,
+        "column": 0
+      },
+      "map": {
+        "version": 3,
+        "sources": [
+          "file:///Users/joezeiad/Desktop/Workspace/table-shift/packages/ui/src/input.tsx"
+        ],
+        "sourcesContent": [
+          "import { cn } from \"@trading-platform/ui\";\n\nexport function Input({\n  className,\n  type,\n  ...props\n}: React.ComponentProps<\"input\">) {\n  return (\n    <input\n      type={type}\n      data-slot=\"input\"\n      className={cn(\n        \"file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input shadow-xs h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base outline-none transition-[color,box-shadow] file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm\",\n        \"focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]\",\n        \"aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n"
+        ],
+        "names": [],
+        "mappings": ";;;;;AAAA;;;AAEO,SAAS,MAAM,EACpB,SAAS,EACT,IAAI,EACJ,GAAG,OAC2B;IAC9B,qBACE,iaAAC;QACC,MAAM;QACN,aAAU;QACV,WAAW,IAAA,oIAAE,EACX,8bACA,iFACA,0GACA;QAED,GAAG,KAAK;;;;;;AAGf",
+        "debugId": null
+      }
+    },
+    {
+      "offset": {
+        "line": 28,
+        "column": 0
+      },
+      "map": {
+        "version": 3,
+        "sources": [
+          "file:///Users/joezeiad/Desktop/Workspace/table-shift/apps/web/landing/src/components/waitlist-form-b2c.tsx"
+        ],
+        "sourcesContent": [
+          "\"use client\";\n\nimport { useState } from \"react\";\nimport { useForm } from \"@tanstack/react-form\";\nimport { Button } from \"@trading-platform/ui/button\";\nimport { Input } from \"@trading-platform/ui/input\";\n\ninterface WaitlistFormB2CProps {\n  source?: string;\n  className?: string;\n  placeholder?: string;\n  buttonText?: string;\n  variant?: \"inline\" | \"stacked\";\n}\n\nexport function WaitlistFormB2C({\n  source = \"landing_page_b2c\",\n  className,\n  placeholder = \"Enter your email\",\n  buttonText = \"Join Waitlist\",\n  variant = \"inline\",\n}: WaitlistFormB2CProps) {\n  const [loading, setLoading] = useState(false);\n  const [success, setSuccess] = useState(false);\n  const [error, setError] = useState<string | null>(null);\n\n  const form = useForm({\n    defaultValues: {\n      email: \"\",\n    },\n    onSubmit: async ({ value }) => {\n      setLoading(true);\n      setError(null);\n\n      try {\n        const response = await fetch(\"/api/waitlist\", {\n          method: \"POST\",\n          headers: {\n            \"Content-Type\": \"application/json\",\n          },\n          body: JSON.stringify({\n            email: value.email,\n            role: \"customer\",\n            source,\n          }),\n        });\n\n        const data = await response.json();\n\n        if (!response.ok) {\n          throw new Error(data.error || \"Failed to join waitlist\");\n        }\n\n        setSuccess(true);\n      } catch (err) {\n        setError(err instanceof Error ? err.message : \"Something went wrong\");\n      } finally {\n        setLoading(false);\n      }\n    },\n  });\n\n  if (success) {\n    return (\n      <div className={className}>\n        <div className=\"rounded-lg border border-green-500 bg-green-50 p-4 text-center dark:bg-green-950\">\n          <div className=\"mb-2 text-3xl\">🎉</div>\n          <h3 className=\"mb-1 text-lg font-bold text-green-900 dark:text-green-100\">\n            You&apos;re in!\n          </h3>\n          <p className=\"text-sm text-green-800 dark:text-green-200\">\n            Check your inbox for next steps.\n          </p>\n          <p className=\"mt-2 text-xs text-green-700 dark:text-green-300\">\n            Early members get instant Silver status (500 points free)\n          </p>\n        </div>\n      </div>\n    );\n  }\n\n  return (\n    <div className={className}>\n      <form\n        onSubmit={(e) => {\n          e.preventDefault();\n          e.stopPropagation();\n          form.handleSubmit();\n        }}\n        className={\n          variant === \"inline\"\n            ? \"flex flex-col gap-2 sm:flex-row\"\n            : \"space-y-3\"\n        }\n      >\n        <form.Field\n          name=\"email\"\n          validators={{\n            onChange: ({ value }) => {\n              if (!value) return \"Email is required\";\n              if (!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(value))\n                return \"Invalid email\";\n              return undefined;\n            },\n          }}\n        >\n          {(field) => (\n            <div className=\"flex-1\">\n              <Input\n                type=\"email\"\n                placeholder={placeholder}\n                value={field.state.value}\n                onChange={(e) => field.handleChange(e.target.value)}\n                onBlur={field.handleBlur}\n                disabled={loading}\n                className={variant === \"inline\" ? \"h-12\" : \"h-11\"}\n                required\n              />\n              {field.state.meta.errors && (\n                <p className=\"mt-1 text-sm text-red-500\">\n                  {field.state.meta.errors[0]}\n                </p>\n              )}\n            </div>\n          )}\n        </form.Field>\n\n        <Button\n          type=\"submit\"\n          className={variant === \"inline\" ? \"h-12 px-8\" : \"w-full\"}\n          disabled={loading}\n        >\n          {loading ? \"Joining...\" : buttonText}\n        </Button>\n      </form>\n\n      {error && (\n        <div className=\"mt-2 rounded-md border border-red-300 bg-red-50 p-2 text-sm text-red-800 dark:bg-red-950 dark:text-red-200\">\n          {error}\n        </div>\n      )}\n\n      {variant === \"stacked\" && (\n        <p className=\"mt-2 text-center text-xs text-gray-500\">\n          Free to join. No credit card required.\n        </p>\n      )}\n    </div>\n  );\n}\n"
+        ],
+        "names": [],
+        "mappings": ";;;;;AAEA;AACA;AACA;AACA;AALA;;;;;;AAeO,SAAS,gBAAgB,EAC9B,SAAS,kBAAkB,EAC3B,SAAS,EACT,cAAc,kBAAkB,EAChC,aAAa,eAAe,EAC5B,UAAU,QAAQ,EACG;IACrB,MAAM,CAAC,SAAS,WAAW,GAAG,IAAA,oYAAQ,EAAC;IACvC,MAAM,CAAC,SAAS,WAAW,GAAG,IAAA,oYAAQ,EAAC;IACvC,MAAM,CAAC,OAAO,SAAS,GAAG,IAAA,oYAAQ,EAAgB;IAElD,MAAM,OAAO,IAAA,sUAAO,EAAC;QACnB,eAAe;YACb,OAAO;QACT;QACA,UAAU,OAAO,EAAE,KAAK,EAAE;YACxB,WAAW;YACX,SAAS;YAET,IAAI;gBACF,MAAM,WAAW,MAAM,MAAM,iBAAiB;oBAC5C,QAAQ;oBACR,SAAS;wBACP,gBAAgB;oBAClB;oBACA,MAAM,KAAK,SAAS,CAAC;wBACnB,OAAO,MAAM,KAAK;wBAClB,MAAM;wBACN;oBACF;gBACF;gBAEA,MAAM,OAAO,MAAM,SAAS,IAAI;gBAEhC,IAAI,CAAC,SAAS,EAAE,EAAE;oBAChB,MAAM,IAAI,MAAM,KAAK,KAAK,IAAI;gBAChC;gBAEA,WAAW;YACb,EAAE,OAAO,KAAK;gBACZ,SAAS,eAAe,QAAQ,IAAI,OAAO,GAAG;YAChD,SAAU;gBACR,WAAW;YACb;QACF;IACF;IAEA,IAAI,SAAS;QACX,qBACE,iaAAC;YAAI,WAAW;sBACd,cAAA,iaAAC;gBAAI,WAAU;;kCACb,iaAAC;wBAAI,WAAU;kCAAgB;;;;;;kCAC/B,iaAAC;wBAAG,WAAU;kCAA4D;;;;;;kCAG1E,iaAAC;wBAAE,WAAU;kCAA6C;;;;;;kCAG1D,iaAAC;wBAAE,WAAU;kCAAkD;;;;;;;;;;;;;;;;;IAMvE;IAEA,qBACE,iaAAC;QAAI,WAAW;;0BACd,iaAAC;gBACC,UAAU,CAAC;oBACT,EAAE,cAAc;oBAChB,EAAE,eAAe;oBACjB,KAAK,YAAY;gBACnB;gBACA,WACE,YAAY,WACR,oCACA;;kCAGN,iaAAC,KAAK,KAAK;wBACT,MAAK;wBACL,YAAY;4BACV,UAAU,CAAC,EAAE,KAAK,EAAE;gCAClB,IAAI,CAAC,OAAO,OAAO;gCACnB,IAAI,CAAC,6BAA6B,IAAI,CAAC,QACrC,OAAO;gCACT,OAAO;4BACT;wBACF;kCAEC,CAAC,sBACA,iaAAC;gCAAI,WAAU;;kDACb,iaAAC,wIAAK;wCACJ,MAAK;wCACL,aAAa;wCACb,OAAO,MAAM,KAAK,CAAC,KAAK;wCACxB,UAAU,CAAC,IAAM,MAAM,YAAY,CAAC,EAAE,MAAM,CAAC,KAAK;wCAClD,QAAQ,MAAM,UAAU;wCACxB,UAAU;wCACV,WAAW,YAAY,WAAW,SAAS;wCAC3C,QAAQ;;;;;;oCAET,MAAM,KAAK,CAAC,IAAI,CAAC,MAAM,kBACtB,iaAAC;wCAAE,WAAU;kDACV,MAAM,KAAK,CAAC,IAAI,CAAC,MAAM,CAAC,EAAE;;;;;;;;;;;;;;;;;kCAOrC,iaAAC,0IAAM;wBACL,MAAK;wBACL,WAAW,YAAY,WAAW,cAAc;wBAChD,UAAU;kCAET,UAAU,eAAe;;;;;;;;;;;;YAI7B,uBACC,iaAAC;gBAAI,WAAU;0BACZ;;;;;;YAIJ,YAAY,2BACX,iaAAC;gBAAE,WAAU;0BAAyC;;;;;;;;;;;;AAM9D",
+        "debugId": null
+      }
+    }
+  ]
+}

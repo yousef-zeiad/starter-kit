@@ -1,0 +1,132 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {
+      "offset": {
+        "line": 4,
+        "column": 0
+      },
+      "map": {
+        "version": 3,
+        "sources": [
+          "file:///Users/joezeiad/Desktop/Workspace/table-shift/packages/ui/src/separator.tsx"
+        ],
+        "sourcesContent": [
+          "\"use client\";\n\nimport { Separator as SeparatorPrimitive } from \"radix-ui\";\n\nimport { cn } from \"@trading-platform/ui\";\n\nexport function Separator({\n  className,\n  orientation = \"horizontal\",\n  decorative = true,\n  ...props\n}: React.ComponentProps<typeof SeparatorPrimitive.Root>) {\n  return (\n    <SeparatorPrimitive.Root\n      data-slot=\"separator\"\n      decorative={decorative}\n      orientation={orientation}\n      className={cn(\n        \"bg-border shrink-0 data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-px\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n"
+        ],
+        "names": [],
+        "mappings": ";;;;;AAEA;AAEA;AAJA;;;;AAMO,SAAS,UAAU,EACxB,SAAS,EACT,cAAc,YAAY,EAC1B,aAAa,IAAI,EACjB,GAAG,OACkD;IACrD,qBACE,iaAAC,waAAkB,CAAC,IAAI;QACtB,aAAU;QACV,YAAY;QACZ,aAAa;QACb,WAAW,IAAA,oIAAE,EACX,kKACA;QAED,GAAG,KAAK;;;;;;AAGf",
+        "debugId": null
+      }
+    },
+    {
+      "offset": {
+        "line": 32,
+        "column": 0
+      },
+      "map": {
+        "version": 3,
+        "sources": [
+          "file:///Users/joezeiad/Desktop/Workspace/table-shift/packages/ui/src/accordion.tsx"
+        ],
+        "sourcesContent": [
+          "\"use client\";\n\nimport * as React from \"react\";\nimport * as AccordionPrimitive from \"@radix-ui/react-accordion\";\nimport { ChevronDownIcon } from \"lucide-react\";\n\nimport { cn } from \"@trading-platform/ui\";\n\nfunction Accordion({\n  ...props\n}: React.ComponentProps<typeof AccordionPrimitive.Root>) {\n  return <AccordionPrimitive.Root data-slot=\"accordion\" {...props} />;\n}\n\nfunction AccordionItem({\n  className,\n  ...props\n}: React.ComponentProps<typeof AccordionPrimitive.Item>) {\n  return (\n    <AccordionPrimitive.Item\n      data-slot=\"accordion-item\"\n      className={cn(\"border-b last:border-b-0\", className)}\n      {...props}\n    />\n  );\n}\n\nfunction AccordionTrigger({\n  className,\n  children,\n  ...props\n}: React.ComponentProps<typeof AccordionPrimitive.Trigger>) {\n  return (\n    <AccordionPrimitive.Header className=\"flex\">\n      <AccordionPrimitive.Trigger\n        data-slot=\"accordion-trigger\"\n        className={cn(\n          \"focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180\",\n          className,\n        )}\n        {...props}\n      >\n        {children}\n        <ChevronDownIcon className=\"text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200\" />\n      </AccordionPrimitive.Trigger>\n    </AccordionPrimitive.Header>\n  );\n}\n\nfunction AccordionContent({\n  className,\n  children,\n  ...props\n}: React.ComponentProps<typeof AccordionPrimitive.Content>) {\n  return (\n    <AccordionPrimitive.Content\n      data-slot=\"accordion-content\"\n      className=\"data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm\"\n      {...props}\n    >\n      <div className={cn(\"pt-0 pb-4\", className)}>{children}</div>\n    </AccordionPrimitive.Content>\n  );\n}\n\nexport { Accordion, AccordionItem, AccordionTrigger, AccordionContent };\n"
+        ],
+        "names": [],
+        "mappings": ";;;;;;;;;;;AAGA;AACA;AAEA;AANA;;;;;AAQA,SAAS,UAAU,EACjB,GAAG,OACkD;IACrD,qBAAO,iaAAC,8XAAuB;QAAC,aAAU;QAAa,GAAG,KAAK;;;;;;AACjE;AAEA,SAAS,cAAc,EACrB,SAAS,EACT,GAAG,OACkD;IACrD,qBACE,iaAAC,8XAAuB;QACtB,aAAU;QACV,WAAW,IAAA,oIAAE,EAAC,4BAA4B;QACzC,GAAG,KAAK;;;;;;AAGf;AAEA,SAAS,iBAAiB,EACxB,SAAS,EACT,QAAQ,EACR,GAAG,OACqD;IACxD,qBACE,iaAAC,gYAAyB;QAAC,WAAU;kBACnC,cAAA,iaAAC,iYAA0B;YACzB,aAAU;YACV,WAAW,IAAA,oIAAE,EACX,8SACA;YAED,GAAG,KAAK;;gBAER;8BACD,iaAAC,+TAAe;oBAAC,WAAU;;;;;;;;;;;;;;;;;AAInC;AAEA,SAAS,iBAAiB,EACxB,SAAS,EACT,QAAQ,EACR,GAAG,OACqD;IACxD,qBACE,iaAAC,iYAA0B;QACzB,aAAU;QACV,WAAU;QACT,GAAG,KAAK;kBAET,cAAA,iaAAC;YAAI,WAAW,IAAA,oIAAE,EAAC,aAAa;sBAAa;;;;;;;;;;;AAGnD",
+        "debugId": null
+      }
+    },
+    {
+      "offset": {
+        "line": 124,
+        "column": 0
+      },
+      "map": {
+        "version": 3,
+        "sources": [
+          "file:///Users/joezeiad/Desktop/Workspace/table-shift/packages/ui/src/circular-progress.tsx"
+        ],
+        "sourcesContent": [
+          "\"use client\";\n\nimport * as React from \"react\";\n\nimport { cn } from \"@trading-platform/ui\";\n\ninterface CircularProgressProps {\n  value: number; // Number of registered items (0-max)\n  max?: number; // Maximum spots (default 50)\n  size?: number; // Size of the circle in pixels\n  strokeWidth?: number; // Width of the stroke\n  showValue?: boolean; // Whether to show the maximum waitlist spots in the center\n  className?: string;\n}\n\nfunction CircularProgress({\n  value,\n  max = 50,\n  size = 32,\n  strokeWidth = 3,\n  showValue = true,\n  className,\n}: CircularProgressProps) {\n  const remaining = Math.max(0, max - value);\n  const percentage = Math.min(100, Math.max(0, (value / max) * 100));\n\n  // SVG circle calculations\n  const center = size / 2;\n  const radius = (size - strokeWidth) / 2;\n  const circumference = 2 * Math.PI * radius;\n  const offset = circumference - (percentage / 100) * circumference;\n\n  return (\n    <div className={cn(\"relative inline-flex\", className)}>\n      <svg\n        width={size}\n        height={size}\n        className=\"-rotate-90 transform\"\n        style={{ width: size, height: size }}\n      >\n        {/* Background circle (light gray) */}\n        <circle\n          cx={center}\n          cy={center}\n          r={radius}\n          fill=\"none\"\n          stroke=\"currentColor\"\n          strokeWidth={strokeWidth}\n          className=\"text-black/10\"\n        />\n        {/* Progress circle (black) */}\n        <circle\n          cx={center}\n          cy={center}\n          r={radius}\n          fill=\"none\"\n          stroke=\"currentColor\"\n          strokeWidth={strokeWidth}\n          strokeDasharray={circumference}\n          strokeDashoffset={offset}\n          strokeLinecap=\"round\"\n          className=\"text-black transition-all duration-300\"\n        />\n      </svg>\n      {/* Center text showing maximum waitlist spots */}\n      {showValue && (\n        <span className=\"absolute inset-0 flex items-center justify-center text-xs font-semibold text-black\">\n          {remaining}\n        </span>\n      )}\n    </div>\n  );\n}\n\nexport { CircularProgress, type CircularProgressProps };\n"
+        ],
+        "names": [],
+        "mappings": ";;;;;AAIA;AAJA;;;AAeA,SAAS,iBAAiB,EACxB,KAAK,EACL,MAAM,EAAE,EACR,OAAO,EAAE,EACT,cAAc,CAAC,EACf,YAAY,IAAI,EAChB,SAAS,EACa;IACtB,MAAM,YAAY,KAAK,GAAG,CAAC,GAAG,MAAM;IACpC,MAAM,aAAa,KAAK,GAAG,CAAC,KAAK,KAAK,GAAG,CAAC,GAAG,AAAC,QAAQ,MAAO;IAE7D,0BAA0B;IAC1B,MAAM,SAAS,OAAO;IACtB,MAAM,SAAS,CAAC,OAAO,WAAW,IAAI;IACtC,MAAM,gBAAgB,IAAI,KAAK,EAAE,GAAG;IACpC,MAAM,SAAS,gBAAgB,AAAC,aAAa,MAAO;IAEpD,qBACE,iaAAC;QAAI,WAAW,IAAA,oIAAE,EAAC,wBAAwB;;0BACzC,iaAAC;gBACC,OAAO;gBACP,QAAQ;gBACR,WAAU;gBACV,OAAO;oBAAE,OAAO;oBAAM,QAAQ;gBAAK;;kCAGnC,iaAAC;wBACC,IAAI;wBACJ,IAAI;wBACJ,GAAG;wBACH,MAAK;wBACL,QAAO;wBACP,aAAa;wBACb,WAAU;;;;;;kCAGZ,iaAAC;wBACC,IAAI;wBACJ,IAAI;wBACJ,GAAG;wBACH,MAAK;wBACL,QAAO;wBACP,aAAa;wBACb,iBAAiB;wBACjB,kBAAkB;wBAClB,eAAc;wBACd,WAAU;;;;;;;;;;;;YAIb,2BACC,iaAAC;gBAAK,WAAU;0BACb;;;;;;;;;;;;AAKX",
+        "debugId": null
+      }
+    },
+    {
+      "offset": {
+        "line": 208,
+        "column": 0
+      },
+      "map": {
+        "version": 3,
+        "sources": [
+          "file:///Users/joezeiad/Desktop/Workspace/table-shift/apps/web/landing/src/components/landing/waitlist-constants.ts"
+        ],
+        "sourcesContent": [
+          "// Waitlist configuration constants\nexport const WAITLIST_CONFIG = {\n  maxSpots: 50,\n} as const;\n\nexport interface WaitlistStats {\n  registeredCount: number;\n  remaining: number;\n  maxSpots: number;\n  isFull: boolean;\n}\n\n/**\n * Fetch waitlist stats from API\n */\nexport async function fetchWaitlistStats(): Promise<WaitlistStats> {\n  try {\n    const response = await fetch(\"/api/waitlist/stats\", {\n      cache: \"no-store\", // Always fetch fresh data\n    });\n\n    if (!response.ok) {\n      throw new Error(\"Failed to fetch waitlist stats\");\n    }\n\n    const result = await response.json();\n    if (result.success && result.data) {\n      return {\n        maxSpots: result.data.maxSpots,\n        registeredCount: result.data.registeredCount,\n        remaining: result.data.remaining,\n        isFull: result.data.isFull,\n      };\n    }\n\n    throw new Error(\"Invalid response format\");\n  } catch (error) {\n    console.error(\"Error fetching waitlist stats:\", error);\n    // Return defaults on error\n    return {\n      maxSpots: WAITLIST_CONFIG.maxSpots,\n      registeredCount: 0,\n      remaining: WAITLIST_CONFIG.maxSpots,\n      isFull: false,\n    };\n  }\n}\n"
+        ],
+        "names": [],
+        "mappings": "AAAA,mCAAmC;;;;;;;AAC5B,MAAM,kBAAkB;IAC7B,UAAU;AACZ;AAYO,eAAe;IACpB,IAAI;QACF,MAAM,WAAW,MAAM,MAAM,uBAAuB;YAClD,OAAO;QACT;QAEA,IAAI,CAAC,SAAS,EAAE,EAAE;YAChB,MAAM,IAAI,MAAM;QAClB;QAEA,MAAM,SAAS,MAAM,SAAS,IAAI;QAClC,IAAI,OAAO,OAAO,IAAI,OAAO,IAAI,EAAE;YACjC,OAAO;gBACL,UAAU,OAAO,IAAI,CAAC,QAAQ;gBAC9B,iBAAiB,OAAO,IAAI,CAAC,eAAe;gBAC5C,WAAW,OAAO,IAAI,CAAC,SAAS;gBAChC,QAAQ,OAAO,IAAI,CAAC,MAAM;YAC5B;QACF;QAEA,MAAM,IAAI,MAAM;IAClB,EAAE,OAAO,OAAO;QACd,QAAQ,KAAK,CAAC,kCAAkC;QAChD,2BAA2B;QAC3B,OAAO;YACL,UAAU,gBAAgB,QAAQ;YAClC,iBAAiB;YACjB,WAAW,gBAAgB,QAAQ;YACnC,QAAQ;QACV;IACF;AACF",
+        "debugId": null
+      }
+    },
+    {
+      "offset": {
+        "line": 251,
+        "column": 0
+      },
+      "map": {
+        "version": 3,
+        "sources": [
+          "file:///Users/joezeiad/Desktop/Workspace/table-shift/apps/web/landing/src/components/landing/use-waitlist-stats.tsx"
+        ],
+        "sourcesContent": [
+          "\"use client\";\n\nimport { useEffect, useState } from \"react\";\n\nimport type { WaitlistStats } from \"./waitlist-constants\";\nimport { WAITLIST_CONFIG, fetchWaitlistStats } from \"./waitlist-constants\";\n\n/**\n * Hook to fetch and manage waitlist statistics\n */\nexport function useWaitlistStats() {\n  const [stats, setStats] = useState<WaitlistStats>({\n    registeredCount: 0,\n    remaining: WAITLIST_CONFIG.maxSpots,\n    maxSpots: WAITLIST_CONFIG.maxSpots,\n    isFull: false,\n  });\n  const [isLoading, setIsLoading] = useState(true);\n  const [error, setError] = useState<Error | null>(null);\n\n  useEffect(() => {\n    async function loadStats() {\n      try {\n        setIsLoading(true);\n        setError(null);\n        const data = await fetchWaitlistStats();\n        setStats(data);\n      } catch (err) {\n        setError(err instanceof Error ? err : new Error(\"Unknown error\"));\n        console.error(\"Failed to load waitlist stats:\", err);\n      } finally {\n        setIsLoading(false);\n      }\n    }\n\n    loadStats();\n\n    // Refresh every 30 seconds\n    const interval = setInterval(loadStats, 30000);\n\n    return () => clearInterval(interval);\n  }, []);\n\n  return { stats, isLoading, error };\n}\n\n"
+        ],
+        "names": [],
+        "mappings": ";;;;AAEA;AAGA;AALA;;;AAUO,SAAS;IACd,MAAM,CAAC,OAAO,SAAS,GAAG,IAAA,oYAAQ,EAAgB;QAChD,iBAAiB;QACjB,WAAW,kMAAe,CAAC,QAAQ;QACnC,UAAU,kMAAe,CAAC,QAAQ;QAClC,QAAQ;IACV;IACA,MAAM,CAAC,WAAW,aAAa,GAAG,IAAA,oYAAQ,EAAC;IAC3C,MAAM,CAAC,OAAO,SAAS,GAAG,IAAA,oYAAQ,EAAe;IAEjD,IAAA,qYAAS,EAAC;QACR,eAAe;YACb,IAAI;gBACF,aAAa;gBACb,SAAS;gBACT,MAAM,OAAO,MAAM,IAAA,qMAAkB;gBACrC,SAAS;YACX,EAAE,OAAO,KAAK;gBACZ,SAAS,eAAe,QAAQ,MAAM,IAAI,MAAM;gBAChD,QAAQ,KAAK,CAAC,kCAAkC;YAClD,SAAU;gBACR,aAAa;YACf;QACF;QAEA;QAEA,2BAA2B;QAC3B,MAAM,WAAW,YAAY,WAAW;QAExC,OAAO,IAAM,cAAc;IAC7B,GAAG,EAAE;IAEL,OAAO;QAAE;QAAO;QAAW;IAAM;AACnC",
+        "debugId": null
+      }
+    },
+    {
+      "offset": {
+        "line": 298,
+        "column": 0
+      },
+      "map": {
+        "version": 3,
+        "sources": [
+          "file:///Users/joezeiad/Desktop/Workspace/table-shift/packages/ui/src/card.tsx"
+        ],
+        "sourcesContent": [
+          "import * as React from \"react\";\n\nimport { cn } from \"@trading-platform/ui\";\n\nfunction Card({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card\"\n      className={cn(\n        \"bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n\nfunction CardHeader({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-header\"\n      className={cn(\n        \"@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n\nfunction CardTitle({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-title\"\n      className={cn(\"leading-none font-semibold\", className)}\n      {...props}\n    />\n  );\n}\n\nfunction CardDescription({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-description\"\n      className={cn(\"text-muted-foreground text-sm\", className)}\n      {...props}\n    />\n  );\n}\n\nfunction CardAction({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-action\"\n      className={cn(\n        \"col-start-2 row-span-2 row-start-1 self-start justify-self-end\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n\nfunction CardContent({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-content\"\n      className={cn(\"px-6\", className)}\n      {...props}\n    />\n  );\n}\n\nfunction CardFooter({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-footer\"\n      className={cn(\"flex items-center px-6 [.border-t]:pt-6\", className)}\n      {...props}\n    />\n  );\n}\n\nexport {\n  Card,\n  CardHeader,\n  CardFooter,\n  CardTitle,\n  CardAction,\n  CardDescription,\n  CardContent,\n};\n"
+        ],
+        "names": [],
+        "mappings": ";;;;;;;;;;;;;;;;;AAEA;;;AAEA,SAAS,KAAK,EAAE,SAAS,EAAE,GAAG,OAAoC;IAChE,qBACE,iaAAC;QACC,aAAU;QACV,WAAW,IAAA,oIAAE,EACX,qFACA;QAED,GAAG,KAAK;;;;;;AAGf;AAEA,SAAS,WAAW,EAAE,SAAS,EAAE,GAAG,OAAoC;IACtE,qBACE,iaAAC;QACC,aAAU;QACV,WAAW,IAAA,oIAAE,EACX,4JACA;QAED,GAAG,KAAK;;;;;;AAGf;AAEA,SAAS,UAAU,EAAE,SAAS,EAAE,GAAG,OAAoC;IACrE,qBACE,iaAAC;QACC,aAAU;QACV,WAAW,IAAA,oIAAE,EAAC,8BAA8B;QAC3C,GAAG,KAAK;;;;;;AAGf;AAEA,SAAS,gBAAgB,EAAE,SAAS,EAAE,GAAG,OAAoC;IAC3E,qBACE,iaAAC;QACC,aAAU;QACV,WAAW,IAAA,oIAAE,EAAC,iCAAiC;QAC9C,GAAG,KAAK;;;;;;AAGf;AAEA,SAAS,WAAW,EAAE,SAAS,EAAE,GAAG,OAAoC;IACtE,qBACE,iaAAC;QACC,aAAU;QACV,WAAW,IAAA,oIAAE,EACX,kEACA;QAED,GAAG,KAAK;;;;;;AAGf;AAEA,SAAS,YAAY,EAAE,SAAS,EAAE,GAAG,OAAoC;IACvE,qBACE,iaAAC;QACC,aAAU;QACV,WAAW,IAAA,oIAAE,EAAC,QAAQ;QACrB,GAAG,KAAK;;;;;;AAGf;AAEA,SAAS,WAAW,EAAE,SAAS,EAAE,GAAG,OAAoC;IACtE,qBACE,iaAAC;QACC,aAAU;QACV,WAAW,IAAA,oIAAE,EAAC,2CAA2C;QACxD,GAAG,KAAK;;;;;;AAGf",
+        "debugId": null
+      }
+    },
+    {
+      "offset": {
+        "line": 400,
+        "column": 0
+      },
+      "map": {
+        "version": 3,
+        "sources": [
+          "file:///Users/joezeiad/Desktop/Workspace/table-shift/apps/web/landing/src/components/landing/what-happens-next-section.tsx"
+        ],
+        "sourcesContent": [
+          "\"use client\";\n\nimport { Button } from \"@trading-platform/ui/button\";\nimport { Card, CardTitle } from \"@trading-platform/ui/card\";\nimport { CircularProgress } from \"@trading-platform/ui/circular-progress\";\n\nimport { useWaitlistStats } from \"./use-waitlist-stats\";\n\nexport function WhatHappensNextSection() {\n  const { stats } = useWaitlistStats();\n  const steps = [\n    {\n      step: \"1\",\n      title: \"Submit the form\",\n      time: \"(2 minutes)\",\n      desc: \"Tell us about your restaurant, locations, current POS system.\",\n    },\n    {\n      step: \"2\",\n      title: \"We review your application\",\n      time: \"(within 48 hours)\",\n      desc: \"We prioritize restaurants that match our target profile (1-4 locations).\",\n    },\n    {\n      step: \"3\",\n      title: \"You get weekly build updates\",\n      time: \"(starting immediately)\",\n      desc: \"See what we're shipping, watch feature videos, track progress.\",\n    },\n    {\n      step: \"4\",\n      title: \"Beta access opens\",\n      time: \"(Q1 2026)\",\n      desc: \"First 50 restaurants get early access before public launch.\",\n    },\n    {\n      step: \"5\",\n      title: \"Launch discount locks in\",\n      time: \"(Q2 2026)\",\n      desc: \"Your $120/month rate is permanent (saves $360/year per location).\",\n    },\n  ];\n\n  return (\n    <section className=\"mx-auto w-full max-w-[1440px] py-8 sm:py-12 md:py-16\">\n      <div className=\"mx-auto flex w-full max-w-[1280px] flex-col items-center gap-8 sm:gap-12 md:gap-16 px-4 sm:px-6\">\n        <div className=\"flex flex-col items-center gap-4 sm:gap-6 text-center w-full\">\n          <h2 className=\"w-full bg-gradient-to-b from-white to-[#d4d4d8] bg-clip-text text-3xl sm:text-4xl md:text-5xl lg:text-[60px] leading-tight sm:leading-[1.2] md:leading-[60px] font-normal tracking-[0.2637px] text-transparent px-4\">\n            What Happens Next?\n          </h2>\n          <p className=\"text-sm sm:text-base md:text-[18px] leading-[28px] tracking-[-0.4395px] text-[#9f9fa9] px-4\">\n            After you join the waitlist:\n          </p>\n        </div>\n\n        <div className=\"flex w-full flex-col gap-4 sm:gap-6 px-0 sm:px-4 md:px-8 lg:px-16\">\n          {steps.map((item) => (\n            <Card\n              key={item.step}\n              className=\"border-[0.704px] border-white/20 bg-gradient-to-b from-[rgba(24,24,27,0.5)] to-[rgba(0,0,0,0.5)] p-4 sm:p-6\"\n            >\n              <div className=\"flex flex-col sm:flex-row gap-4 sm:gap-6\">\n                <div className=\"flex h-12 w-12 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-xl border-[0.704px] border-white/30\">\n                  <span className=\"text-xl sm:text-2xl leading-[32px] font-normal tracking-[0.0703px] text-white\">\n                    {item.step}\n                  </span>\n                </div>\n                <div className=\"flex-1\">\n                  <div className=\"mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2\">\n                    <CardTitle className=\"text-lg sm:text-xl font-normal tracking-[-0.4492px] text-white\">\n                      {item.title}\n                    </CardTitle>\n                    <span className=\"text-xs sm:text-sm leading-[20px] tracking-[-0.1504px] text-[#71717b]\">\n                      {item.time}\n                    </span>\n                  </div>\n                  <p className=\"text-sm sm:text-base leading-[24px] tracking-[-0.3125px] text-[#9f9fa9]\">\n                    {item.desc}\n                  </p>\n                </div>\n              </div>\n            </Card>\n          ))}\n        </div>\n\n        <div className=\"flex flex-col items-center gap-4 sm:gap-6 text-center w-full px-4\">\n          <p className=\"text-sm sm:text-base leading-[24px] tracking-[-0.3125px] text-[#9f9fa9]\">\n            No payment required. No commitment. Just reserve your spot.\n          </p>\n          <Button\n            size=\"lg\"\n            className=\"h-12 w-full sm:w-[228px] border-[0.704px] border-white/20 bg-gradient-to-r from-white to-[#f4f4f5] px-8 text-sm sm:text-base font-semibold tracking-[-0.1504px] text-black hover:from-white/90 hover:to-[#f4f4f5]/90\"\n          >\n            Reserve Your Spot\n            <span className=\"ml-2 sm:ml-4\">\n              <CircularProgress\n                value={stats.registeredCount}\n                max={stats.maxSpots}\n                size={32}\n              />\n            </span>\n          </Button>\n        </div>\n      </div>\n    </section>\n  );\n}\n"
+        ],
+        "names": [],
+        "mappings": ";;;;;AAEA;AACA;AACA;AAEA;AANA;;;;;;AAQO,SAAS;IACd,MAAM,EAAE,KAAK,EAAE,GAAG,IAAA,uMAAgB;IAClC,MAAM,QAAQ;QACZ;YACE,MAAM;YACN,OAAO;YACP,MAAM;YACN,MAAM;QACR;QACA;YACE,MAAM;YACN,OAAO;YACP,MAAM;YACN,MAAM;QACR;QACA;YACE,MAAM;YACN,OAAO;YACP,MAAM;YACN,MAAM;QACR;QACA;YACE,MAAM;YACN,OAAO;YACP,MAAM;YACN,MAAM;QACR;QACA;YACE,MAAM;YACN,OAAO;YACP,MAAM;YACN,MAAM;QACR;KACD;IAED,qBACE,iaAAC;QAAQ,WAAU;kBACjB,cAAA,iaAAC;YAAI,WAAU;;8BACb,iaAAC;oBAAI,WAAU;;sCACb,iaAAC;4BAAG,WAAU;sCAAsN;;;;;;sCAGpO,iaAAC;4BAAE,WAAU;sCAA8F;;;;;;;;;;;;8BAK7G,iaAAC;oBAAI,WAAU;8BACZ,MAAM,GAAG,CAAC,CAAC,qBACV,iaAAC,sIAAI;4BAEH,WAAU;sCAEV,cAAA,iaAAC;gCAAI,WAAU;;kDACb,iaAAC;wCAAI,WAAU;kDACb,cAAA,iaAAC;4CAAK,WAAU;sDACb,KAAK,IAAI;;;;;;;;;;;kDAGd,iaAAC;wCAAI,WAAU;;0DACb,iaAAC;gDAAI,WAAU;;kEACb,iaAAC,2IAAS;wDAAC,WAAU;kEAClB,KAAK,KAAK;;;;;;kEAEb,iaAAC;wDAAK,WAAU;kEACb,KAAK,IAAI;;;;;;;;;;;;0DAGd,iaAAC;gDAAE,WAAU;0DACV,KAAK,IAAI;;;;;;;;;;;;;;;;;;2BAnBX,KAAK,IAAI;;;;;;;;;;8BA2BpB,iaAAC;oBAAI,WAAU;;sCACb,iaAAC;4BAAE,WAAU;sCAA0E;;;;;;sCAGvF,iaAAC,0IAAM;4BACL,MAAK;4BACL,WAAU;;gCACX;8CAEC,iaAAC;oCAAK,WAAU;8CACd,cAAA,iaAAC,kKAAgB;wCACf,OAAO,MAAM,eAAe;wCAC5B,KAAK,MAAM,QAAQ;wCACnB,MAAM;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAQtB",
+        "debugId": null
+      }
+    }
+  ]
+}

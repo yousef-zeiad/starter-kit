@@ -1,0 +1,42 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {
+      "offset": {
+        "line": 82,
+        "column": 0
+      },
+      "map": {
+        "version": 3,
+        "sources": [
+          "file:///Users/joezeiad/Desktop/Workspace/table-shift/packages/db/src/client.ts"
+        ],
+        "sourcesContent": [
+          "import type { SupabaseClient } from \"@supabase/supabase-js\";\nimport { createClient } from \"@supabase/supabase-js\";\n\nimport type { Database } from \"./types\";\n\n/**\n * Get environment variables with proper validation\n */\nfunction getEnvVar(key: string): string {\n  const value = process.env[key];\n  if (!value) {\n    throw new Error(`Missing required environment variable: ${key}`);\n  }\n  return value;\n}\n\nlet supabaseAdminClient: SupabaseClient<Database> | null = null;\n\nfunction initSupabaseAdmin(): SupabaseClient<Database> {\n  if (supabaseAdminClient) {\n    return supabaseAdminClient;\n  }\n\n  supabaseAdminClient = createClient<Database>(\n    getEnvVar(\"NEXT_PUBLIC_SUPABASE_URL\"),\n    getEnvVar(\"SUPABASE_SERVICE_ROLE_KEY\"),\n    {\n      auth: {\n        autoRefreshToken: false,\n        persistSession: false,\n      },\n    },\n  );\n\n  return supabaseAdminClient;\n}\n\n/**\n * Supabase client for server-side usage (Next.js API routes, server components, etc.)\n * Uses the service role key for admin operations.\n *\n * Lazily instantiated to avoid requiring the service role key during build time\n * for applications that don't need it.\n */\nexport const supabaseAdmin = new Proxy({} as SupabaseClient<Database>, {\n  get(_target, prop, receiver) {\n    const client = initSupabaseAdmin() as SupabaseClient<Database>;\n    const value = Reflect.get(client, prop, receiver);\n    if (typeof value === \"function\") {\n      return value.bind(client);\n    }\n    return value;\n  },\n}) as SupabaseClient<Database>;\n\nexport function getSupabaseAdminClient(): SupabaseClient<Database> {\n  return initSupabaseAdmin();\n}\n\n/**\n * Supabase client for client-side usage (browser, React Native)\n * Uses the anon key which respects Row Level Security policies\n */\nexport function createBrowserClient() {\n  return createClient<Database>(\n    getEnvVar(\"NEXT_PUBLIC_SUPABASE_URL\"),\n    getEnvVar(\"NEXT_PUBLIC_SUPABASE_ANON_KEY\"),\n    {\n      auth: {\n        persistSession: true,\n        autoRefreshToken: true,\n      },\n    },\n  );\n}\n\n/**\n * Create a Supabase client for React Native/Expo\n * This should be used in mobile apps with expo-secure-store for session persistence\n */\nexport function createMobileClient() {\n  return createClient<Database>(\n    getEnvVar(\"NEXT_PUBLIC_SUPABASE_URL\"),\n    getEnvVar(\"NEXT_PUBLIC_SUPABASE_ANON_KEY\"),\n    {\n      auth: {\n        persistSession: true,\n        autoRefreshToken: true,\n        // Note: You'll need to implement custom storage using expo-secure-store\n        // storage: customExpoSecureStoreAdapter,\n      },\n    },\n  );\n}\n"
+        ],
+        "names": [],
+        "mappings": ";;;;;;;;;;AACA;;AAIA;;CAEC,GACD,SAAS,UAAU,GAAW;IAC5B,MAAM,QAAQ,QAAQ,GAAG,CAAC,IAAI;IAC9B,IAAI,CAAC,OAAO;QACV,MAAM,IAAI,MAAM,CAAC,uCAAuC,EAAE,KAAK;IACjE;IACA,OAAO;AACT;AAEA,IAAI,sBAAuD;AAE3D,SAAS;IACP,IAAI,qBAAqB;QACvB,OAAO;IACT;IAEA,sBAAsB,IAAA,6SAAY,EAChC,UAAU,6BACV,UAAU,8BACV;QACE,MAAM;YACJ,kBAAkB;YAClB,gBAAgB;QAClB;IACF;IAGF,OAAO;AACT;AASO,MAAM,gBAAgB,IAAI,MAAM,CAAC,GAA+B;IACrE,KAAI,OAAO,EAAE,IAAI,EAAE,QAAQ;QACzB,MAAM,SAAS;QACf,MAAM,QAAQ,QAAQ,GAAG,CAAC,QAAQ,MAAM;QACxC,IAAI,OAAO,UAAU,YAAY;YAC/B,OAAO,MAAM,IAAI,CAAC;QACpB;QACA,OAAO;IACT;AACF;AAEO,SAAS;IACd,OAAO;AACT;AAMO,SAAS;IACd,OAAO,IAAA,6SAAY,EACjB,UAAU,6BACV,UAAU,kCACV;QACE,MAAM;YACJ,gBAAgB;YAChB,kBAAkB;QACpB;IACF;AAEJ;AAMO,SAAS;IACd,OAAO,IAAA,6SAAY,EACjB,UAAU,6BACV,UAAU,kCACV;QACE,MAAM;YACJ,gBAAgB;YAChB,kBAAkB;QAGpB;IACF;AAEJ",
+        "debugId": null
+      }
+    },
+    {
+      "offset": {
+        "line": 149,
+        "column": 0
+      },
+      "map": {
+        "version": 3,
+        "sources": [
+          "file:///Users/joezeiad/Desktop/Workspace/table-shift/apps/web/landing/src/app/api/waitlist/stats/route.ts"
+        ],
+        "sourcesContent": [
+          "import { NextResponse } from \"next/server\";\n\nimport { supabaseAdmin } from \"@trading-platform/db/client\";\n\n/**\n * GET /api/waitlist/stats\n * Get public waitlist statistics (registered count, remaining spots)\n */\nexport async function GET() {\n  const MAX_SPOTS = 50;\n  const defaultResponse = {\n    success: true,\n    data: {\n      registeredCount: 0,\n      remaining: MAX_SPOTS,\n      maxSpots: MAX_SPOTS,\n      isFull: false,\n    },\n  };\n\n  try {\n    // Count all registered restaurants (no status filter)\n    // eslint-disable-next-line @typescript-eslint/no-explicit-any\n    const queryResult = await (supabaseAdmin as any)\n      .from(\"early_access_waitlist\")\n      .select(\"*\", { count: \"exact\", head: true });\n\n    const { count, error } = queryResult;\n\n    if (error) {\n      console.error(\"Waitlist stats database error:\", error);\n      console.error(\"Error code:\", error.code);\n      console.error(\"Error message:\", error.message);\n      console.error(\"Error details:\", JSON.stringify(error, null, 2));\n      // Return default response instead of failing\n      return NextResponse.json(defaultResponse);\n    }\n\n    const registeredCount = count ?? 0;\n    const remaining = Math.max(0, MAX_SPOTS - registeredCount);\n    const isFull = remaining === 0;\n\n    return NextResponse.json({\n      success: true,\n      data: {\n        registeredCount,\n        remaining,\n        maxSpots: MAX_SPOTS,\n        isFull,\n      },\n    });\n  } catch (error) {\n    console.error(\"Waitlist stats API error:\", error);\n    if (error instanceof Error) {\n      console.error(\"Error name:\", error.name);\n      console.error(\"Error message:\", error.message);\n      console.error(\"Error stack:\", error.stack);\n    } else {\n      console.error(\"Error details:\", String(error));\n    }\n    // Return default values instead of failing\n    return NextResponse.json(defaultResponse);\n  }\n}\n"
+        ],
+        "names": [],
+        "mappings": ";;;;AAAA;AAEA;;;AAMO,eAAe;IACpB,MAAM,YAAY;IAClB,MAAM,kBAAkB;QACtB,SAAS;QACT,MAAM;YACJ,iBAAiB;YACjB,WAAW;YACX,UAAU;YACV,QAAQ;QACV;IACF;IAEA,IAAI;QACF,sDAAsD;QACtD,8DAA8D;QAC9D,MAAM,cAAc,MAAM,AAAC,kJAAa,CACrC,IAAI,CAAC,yBACL,MAAM,CAAC,KAAK;YAAE,OAAO;YAAS,MAAM;QAAK;QAE5C,MAAM,EAAE,KAAK,EAAE,KAAK,EAAE,GAAG;QAEzB,IAAI,OAAO;YACT,QAAQ,KAAK,CAAC,kCAAkC;YAChD,QAAQ,KAAK,CAAC,eAAe,MAAM,IAAI;YACvC,QAAQ,KAAK,CAAC,kBAAkB,MAAM,OAAO;YAC7C,QAAQ,KAAK,CAAC,kBAAkB,KAAK,SAAS,CAAC,OAAO,MAAM;YAC5D,6CAA6C;YAC7C,OAAO,mUAAY,CAAC,IAAI,CAAC;QAC3B;QAEA,MAAM,kBAAkB,SAAS;QACjC,MAAM,YAAY,KAAK,GAAG,CAAC,GAAG,YAAY;QAC1C,MAAM,SAAS,cAAc;QAE7B,OAAO,mUAAY,CAAC,IAAI,CAAC;YACvB,SAAS;YACT,MAAM;gBACJ;gBACA;gBACA,UAAU;gBACV;YACF;QACF;IACF,EAAE,OAAO,OAAO;QACd,QAAQ,KAAK,CAAC,6BAA6B;QAC3C,IAAI,iBAAiB,OAAO;YAC1B,QAAQ,KAAK,CAAC,eAAe,MAAM,IAAI;YACvC,QAAQ,KAAK,CAAC,kBAAkB,MAAM,OAAO;YAC7C,QAAQ,KAAK,CAAC,gBAAgB,MAAM,KAAK;QAC3C,OAAO;YACL,QAAQ,KAAK,CAAC,kBAAkB,OAAO;QACzC;QACA,2CAA2C;QAC3C,OAAO,mUAAY,CAAC,IAAI,CAAC;IAC3B;AACF",
+        "debugId": null
+      }
+    }
+  ]
+}

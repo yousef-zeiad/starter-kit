@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/apps/web/landing/src/i18n/locales/en.json"],"sourcesContent":["{\"nav\":{\"brand\":\"example\",\"exapmle\":\"example\",\"example\":\"example\"}}"],"names":[],"mappings":"AAAA"}},
+    {"offset": {"line": 3, "column": 93}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

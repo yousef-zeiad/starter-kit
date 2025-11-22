@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/joezeiad/Desktop/Workspace/trading-platform/apps/web/landing/src/app/%5Blocale%5D/page.tsx"],"sourcesContent":["\"use client\";\n\nexport default function HomePage() {\n  return (\n    <div className=\"relative min-h-screen bg-[#0c0c0c]\">\n      <main className=\"\">\n        <div>platform</div>\n      </main>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AAAA;;AAEe,SAAS;IACtB,qBACE,iaAAC;QAAI,WAAU;kBACb,cAAA,iaAAC;YAAK,WAAU;sBACd,cAAA,iaAAC;0BAAI;;;;;;;;;;;;;;;;AAIb","debugId":null}}]
+}

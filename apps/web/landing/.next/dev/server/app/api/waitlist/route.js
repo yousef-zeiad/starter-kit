@@ -1,0 +1,12 @@
+var R=require("../../../chunks/[turbopack]_runtime.js")("server/app/api/waitlist/route.js")
+R.c("server/chunks/bdf11_@supabase_node-fetch_lib_index_c5d13751.js")
+R.c("server/chunks/13b51_next_fcdff473._.js")
+R.c("server/chunks/37e87_zod_v4_96656cb0._.js")
+R.c("server/chunks/bcdff_tr46_f2ec906a._.js")
+R.c("server/chunks/484ef_@supabase_storage-js_dist_module_199cb275._.js")
+R.c("server/chunks/574b8_@supabase_auth-js_dist_module_8e40d58b._.js")
+R.c("server/chunks/node_modules__pnpm_e2ba48a3._.js")
+R.c("server/chunks/[root-of-the-server]__1d6f69bc._.js")
+R.c("server/chunks/apps_web_landing__next-internal_server_app_api_waitlist_route_actions_f7d4453a.js")
+R.m("[project]/node_modules/.pnpm/next@16.0.0_babel-plugin-react-compiler@1.0.0_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/apps/web/landing/src/app/api/waitlist/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)")
+module.exports=R.m("[project]/node_modules/.pnpm/next@16.0.0_babel-plugin-react-compiler@1.0.0_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/apps/web/landing/src/app/api/waitlist/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)").exports

@@ -1,0 +1,8 @@
+
+> @trading-platform/admin@ dev /Users/joezeiad/Desktop/Workspace/trading-platform/apps/web/admin
+> pnpm with-env next dev
+
+
+> @trading-platform/admin@ with-env /Users/joezeiad/Desktop/Workspace/trading-platform/apps/web/admin
+> dotenv -e ../../.env -- next dev
+

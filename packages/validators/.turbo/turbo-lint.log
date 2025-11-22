@@ -1,0 +1,21 @@
+
+> @trading-platform/validators@ lint /Users/joezeiad/Desktop/Workspace/table-shift/packages/validators
+> eslint --flag unstable_native_nodejs_ts_config --cache --cache-location .cache/.eslintcache apps/web/landing/src/lib/email/waitlist.ts
+
+
+Oops! Something went wrong! :(
+
+ESLint: 9.38.0
+
+Error: EPERM: operation not permitted, open '/Users/joezeiad/Desktop/Workspace/table-shift/node_modules/.pnpm/path-key@3.1.1/node_modules/path-key/index.js'
+    at Object.openSync (node:fs:603:3)
+    at Object.readFileSync (node:fs:471:35)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1273:18)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/Users/joezeiad/Desktop/Workspace/table-shift/node_modules/.pnpm/cross-spawn@7.0.6/node_modules/cross-spawn/lib/util/resolveCommand.js:5:20)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+ ELIFECYCLE  Command failed with exit code 2.

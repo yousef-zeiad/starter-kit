@@ -1,0 +1,187 @@
+
+> @trading-platform/db@ build /Users/joezeiad/Desktop/Workspace/table-shift/packages/db
+> tsc
+
+src/payments.ts(108,26): error TS18046: 'data' is of type 'unknown'.
+src/payments.ts(160,26): error TS18046: 'data' is of type 'unknown'.
+src/payments.ts(198,33): error TS2339: Property 'metadata' does not exist on type 'PolarSubscription'.
+src/payments.ts(204,15): error TS2345: Argument of type '{ subscription_status: string; subscription_id: string; trial_ends_at: null; subscription_ends_at: string; }' is not assignable to parameter of type 'never'.
+src/payments.ts(220,15): error TS2345: Argument of type '{ subscription_tier: string; subscription_id: string; subscription_ends_at: string; }' is not assignable to parameter of type 'never'.
+src/payments.ts(235,33): error TS2339: Property 'metadata' does not exist on type 'PolarSubscription'.
+src/payments.ts(240,15): error TS2345: Argument of type '{ subscription_status: string; subscription_ends_at: string; }' is not assignable to parameter of type 'never'.
+src/payments.ts(250,15): error TS2345: Argument of type '{ subscription_tier: string; subscription_ends_at: string; }' is not assignable to parameter of type 'never'.
+src/payments.ts(262,6): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { Row: { id: string; ... 20 more ...; updated_at: string | null; }; Insert: { ...; }; Update: { ...; }; Relationships: []; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Argument of type '{ user_id: any; payment_type: string; amount: number; stripe_payment_intent_id: any; status: string; metadata: any; }' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { ...; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Object literal may only specify known properties, and 'user_id' does not exist in type 'never[]'.
+src/payments.ts(276,6): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { Row: { id: string; ... 20 more ...; updated_at: string | null; }; Insert: { ...; }; Update: { ...; }; Relationships: []; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Argument of type '{ user_id: any; payment_type: string; amount: number; stripe_payment_intent_id: any; status: string; metadata: any; }' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { ...; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Object literal may only specify known properties, and 'user_id' does not exist in type 'never[]'.
+src/simple-wallet.ts(15,3): error TS2322: Type '"2024-12-18.acacia"' is not assignable to type '"2025-09-30.clover"'.
+src/simple-wallet.ts(57,8): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { Row: { id: string; ... 20 more ...; updated_at: string | null; }; Insert: { ...; }; Update: { ...; }; Relationships: []; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Argument of type '{ user_id: string; stripe_customer_id: string; balance: number; available_balance: number; frozen_balance: number; }' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { ...; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Object literal may only specify known properties, and 'user_id' does not exist in type 'never[]'.
+src/simple-wallet.ts(107,24): error TS2339: Property 'stripe_customer_id' does not exist on type 'never'.
+src/simple-wallet.ts(126,42): error TS2339: Property 'balance' does not exist on type 'never'.
+src/simple-wallet.ts(127,44): error TS2339: Property 'available_balance' does not exist on type 'never'.
+src/simple-wallet.ts(131,15): error TS2345: Argument of type '{ balance: number; available_balance: number; }' is not assignable to parameter of type 'never'.
+src/simple-wallet.ts(135,24): error TS2339: Property 'id' does not exist on type 'never'.
+src/simple-wallet.ts(138,53): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { Row: { id: string; ... 20 more ...; updated_at: string | null; }; Insert: { ...; }; Update: { ...; }; Relationships: []; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Argument of type '{ user_id: string; wallet_id: any; amount: number; type: string; status: string; stripe_payment_intent_id: string; related_reservation_id: string | undefined; balance_before: any; balance_after: number; description: string; }' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { ...; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Object literal may only specify known properties, and 'user_id' does not exist in type 'never[]'.
+src/simple-wallet.ts(140,25): error TS2339: Property 'id' does not exist on type 'never'.
+src/simple-wallet.ts(146,30): error TS2339: Property 'balance' does not exist on type 'never'.
+src/simple-wallet.ts(182,41): error TS2339: Property 'available_balance' does not exist on type 'never'.
+src/simple-wallet.ts(191,41): error TS2339: Property 'frozen_balance' does not exist on type 'never'.
+src/simple-wallet.ts(195,15): error TS2345: Argument of type '{ available_balance: number; frozen_balance: number; }' is not assignable to parameter of type 'never'.
+src/simple-wallet.ts(199,24): error TS2339: Property 'id' does not exist on type 'never'.
+src/simple-wallet.ts(201,53): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { Row: { id: string; ... 20 more ...; updated_at: string | null; }; Insert: { ...; }; Update: { ...; }; Relationships: []; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Argument of type '{ user_id: string; wallet_id: any; amount: number; type: string; status: string; related_reservation_id: string; balance_before: number; balance_after: number; description: string; }' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { ...; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Object literal may only specify known properties, and 'user_id' does not exist in type 'never[]'.
+src/simple-wallet.ts(203,25): error TS2339: Property 'id' does not exist on type 'never'.
+src/simple-wallet.ts(242,34): error TS2339: Property 'user_id' does not exist on type 'never'.
+src/simple-wallet.ts(247,50): error TS2339: Property 'deposit_amount' does not exist on type 'never'.
+src/simple-wallet.ts(249,25): error TS2339: Property 'available_balance' does not exist on type 'never'.
+src/simple-wallet.ts(250,41): error TS2339: Property 'frozen_balance' does not exist on type 'never'.
+src/simple-wallet.ts(254,15): error TS2345: Argument of type '{ available_balance: number; frozen_balance: number; }' is not assignable to parameter of type 'never'.
+src/simple-wallet.ts(258,24): error TS2339: Property 'id' does not exist on type 'never'.
+src/simple-wallet.ts(260,53): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { Row: { id: string; ... 20 more ...; updated_at: string | null; }; Insert: { ...; }; Update: { ...; }; Relationships: []; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Argument of type '{ user_id: any; wallet_id: any; amount: number; type: string; status: string; related_reservation_id: string; balance_before: any; balance_after: number; description: string; }' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { ...; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Object literal may only specify known properties, and 'user_id' does not exist in type 'never[]'.
+src/simple-wallet.ts(261,28): error TS2339: Property 'user_id' does not exist on type 'never'.
+src/simple-wallet.ts(262,25): error TS2339: Property 'id' does not exist on type 'never'.
+src/simple-wallet.ts(267,30): error TS2339: Property 'available_balance' does not exist on type 'never'.
+src/simple-wallet.ts(302,34): error TS2339: Property 'user_id' does not exist on type 'never'.
+src/simple-wallet.ts(307,50): error TS2339: Property 'deposit_amount' does not exist on type 'never'.
+src/simple-wallet.ts(312,42): error TS2339: Property 'balance' does not exist on type 'never'.
+src/simple-wallet.ts(313,41): error TS2339: Property 'frozen_balance' does not exist on type 'never'.
+src/simple-wallet.ts(317,15): error TS2345: Argument of type '{ balance: number; frozen_balance: number; }' is not assignable to parameter of type 'never'.
+src/simple-wallet.ts(321,24): error TS2339: Property 'id' does not exist on type 'never'.
+src/simple-wallet.ts(324,53): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { Row: { id: string; ... 20 more ...; updated_at: string | null; }; Insert: { ...; }; Update: { ...; }; Relationships: []; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Argument of type '{ user_id: any; wallet_id: any; amount: number; type: string; status: string; related_reservation_id: string; balance_before: any; balance_after: number; description: string; metadata: { restaurant_amount: number; trading-platform_amount: number; }; }' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { ...; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Object literal may only specify known properties, and 'user_id' does not exist in type 'never[]'.
+src/simple-wallet.ts(325,28): error TS2339: Property 'user_id' does not exist on type 'never'.
+src/simple-wallet.ts(326,25): error TS2339: Property 'id' does not exist on type 'never'.
+src/simple-wallet.ts(331,30): error TS2339: Property 'balance' does not exist on type 'never'.
+src/simple-wallet.ts(356,51): error TS2345: Argument of type '"get_wallet_balance"' is not assignable to parameter of type '"get_waitlist_stats"'.
+src/stripe.ts(21,3): error TS2322: Type '"2024-12-18.acacia"' is not assignable to type '"2025-09-30.clover"'.
+src/stripe.ts(185,8): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { Row: { id: string; ... 20 more ...; updated_at: string | null; }; Insert: { ...; }; Update: { ...; }; Relationships: []; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Argument of type '{ user_id: string; stripe_account_id: string; stripe_financial_account_id: string; stripe_customer_id: string; balance: number; available_balance: number; frozen_balance: number; currency: string; status: string; }' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { ...; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Object literal may only specify known properties, and 'user_id' does not exist in type 'never[]'.
+src/stripe.ts(257,20): error TS2339: Property 'full_name' does not exist on type 'never'.
+src/stripe.ts(258,21): error TS2339: Property 'email' does not exist on type 'never'.
+src/stripe.ts(259,28): error TS2339: Property 'phone' does not exist on type 'never'.
+src/stripe.ts(274,41): error TS2339: Property 'stripe_account_id' does not exist on type 'never'.
+src/stripe.ts(299,41): error TS2339: Property 'stripe_account_id' does not exist on type 'never'.
+src/stripe.ts(310,41): error TS2339: Property 'stripe_account_id' does not exist on type 'never'.
+src/stripe.ts(317,8): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { Row: { id: string; ... 20 more ...; updated_at: string | null; }; Insert: { ...; }; Update: { ...; }; Relationships: []; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Argument of type '{ user_id: string; financial_account_id: any; stripe_card_id: string; stripe_cardholder_id: string; last4: string; exp_month: number; exp_year: number; brand: string; card_type: string; status: string; daily_spending_limit: number; }' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { ...; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Object literal may only specify known properties, and 'user_id' does not exist in type 'never[]'.
+src/stripe.ts(319,48): error TS2339: Property 'id' does not exist on type 'never'.
+src/stripe.ts(384,34): error TS2339: Property 'stripe_customer_id' does not exist on type 'never'.
+src/stripe.ts(407,37): error TS2339: Property 'stripe_account_id' does not exist on type 'never'.
+src/stripe.ts(419,15): error TS2345: Argument of type '{ balance: any; available_balance: any; }' is not assignable to parameter of type 'never'.
+src/stripe.ts(420,35): error TS2339: Property 'balance' does not exist on type 'never'.
+src/stripe.ts(421,45): error TS2339: Property 'available_balance' does not exist on type 'never'.
+src/stripe.ts(428,64): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { Row: { id: string; ... 20 more ...; updated_at: string | null; }; Insert: { ...; }; Update: { ...; }; Relationships: []; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Argument of type '{ user_id: string; financial_account_id: any; amount: number; type: string; status: string; description: string; stripe_payment_intent_id: string; stripe_transfer_id: string; related_reservation_id: string | undefined; balance_before: any; balance_after: any; }' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { ...; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Object literal may only specify known properties, and 'user_id' does not exist in type 'never[]'.
+src/stripe.ts(430,46): error TS2339: Property 'id' does not exist on type 'never'.
+src/stripe.ts(438,40): error TS2339: Property 'balance' does not exist on type 'never'.
+src/stripe.ts(439,38): error TS2339: Property 'balance' does not exist on type 'never'.
+src/stripe.ts(448,35): error TS2339: Property 'balance' does not exist on type 'never'.
+src/stripe.ts(476,17): error TS2339: Property 'available_balance' does not exist on type 'never'.
+src/stripe.ts(483,15): error TS2345: Argument of type '{ available_balance: number; frozen_balance: any; }' is not assignable to parameter of type 'never'.
+src/stripe.ts(484,36): error TS2339: Property 'available_balance' does not exist on type 'never'.
+src/stripe.ts(485,33): error TS2339: Property 'frozen_balance' does not exist on type 'never'.
+src/stripe.ts(492,64): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { Row: { id: string; ... 20 more ...; updated_at: string | null; }; Insert: { ...; }; Update: { ...; }; Relationships: []; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Argument of type '{ user_id: string; financial_account_id: any; amount: number; type: string; status: string; description: string; related_reservation_id: string; balance_before: any; balance_after: any; metadata: { ...; }; }' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { ...; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Object literal may only specify known properties, and 'user_id' does not exist in type 'never[]'.
+src/stripe.ts(494,37): error TS2339: Property 'id' does not exist on type 'never'.
+src/stripe.ts(500,31): error TS2339: Property 'balance' does not exist on type 'never'.
+src/stripe.ts(501,31): error TS2339: Property 'balance' does not exist on type 'never'.
+src/stripe.ts(508,34): error TS2339: Property 'available_balance' does not exist on type 'never'.
+src/stripe.ts(509,31): error TS2339: Property 'frozen_balance' does not exist on type 'never'.
+src/stripe.ts(530,21): error TS2339: Property 'deposit_status' does not exist on type 'never'.
+src/stripe.ts(538,34): error TS2339: Property 'user_id' does not exist on type 'never'.
+src/stripe.ts(546,15): error TS2345: Argument of type '{ frozen_balance: number; available_balance: any; }' is not assignable to parameter of type 'never'.
+src/stripe.ts(547,33): error TS2339: Property 'frozen_balance' does not exist on type 'never'.
+src/stripe.ts(547,62): error TS2339: Property 'deposit_amount' does not exist on type 'never'.
+src/stripe.ts(549,19): error TS2339: Property 'available_balance' does not exist on type 'never'.
+src/stripe.ts(549,51): error TS2339: Property 'deposit_amount' does not exist on type 'never'.
+src/stripe.ts(551,34): error TS2339: Property 'user_id' does not exist on type 'never'.
+src/stripe.ts(556,64): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { Row: { id: string; ... 20 more ...; updated_at: string | null; }; Insert: { ...; }; Update: { ...; }; Relationships: []; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Argument of type '{ user_id: any; financial_account_id: any; amount: any; type: string; status: string; description: string; related_reservation_id: string; balance_before: any; balance_after: any; }' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { ...; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Object literal may only specify known properties, and 'user_id' does not exist in type 'never[]'.
+src/stripe.ts(557,28): error TS2339: Property 'user_id' does not exist on type 'never'.
+src/stripe.ts(558,37): error TS2339: Property 'id' does not exist on type 'never'.
+src/stripe.ts(559,27): error TS2339: Property 'deposit_amount' does not exist on type 'never'.
+src/stripe.ts(564,31): error TS2339: Property 'balance' does not exist on type 'never'.
+src/stripe.ts(565,31): error TS2339: Property 'balance' does not exist on type 'never'.
+src/stripe.ts(571,15): error TS2345: Argument of type '{ deposit_status: string; checked_in_at: string; }' is not assignable to parameter of type 'never'.
+src/stripe.ts(579,36): error TS2339: Property 'deposit_amount' does not exist on type 'never'.
+src/stripe.ts(580,34): error TS2339: Property 'available_balance' does not exist on type 'never'.
+src/stripe.ts(605,39): error TS2339: Property 'deposit_amount' does not exist on type 'never'.
+src/stripe.ts(606,36): error TS2339: Property 'food_order_amount' does not exist on type 'never'.
+src/stripe.ts(612,34): error TS2339: Property 'user_id' does not exist on type 'never'.
+src/stripe.ts(624,15): error TS2345: Argument of type '{ frozen_balance: number; balance: number; }' is not assignable to parameter of type 'never'.
+src/stripe.ts(625,33): error TS2339: Property 'frozen_balance' does not exist on type 'never'.
+src/stripe.ts(626,26): error TS2339: Property 'balance' does not exist on type 'never'.
+src/stripe.ts(628,34): error TS2339: Property 'user_id' does not exist on type 'never'.
+src/stripe.ts(631,21): error TS2339: Property 'locations' does not exist on type 'never'.
+src/stripe.ts(635,34): error TS2339: Property 'locations' does not exist on type 'never'.
+src/stripe.ts(647,71): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { Row: { id: string; ... 20 more ...; updated_at: string | null; }; Insert: { ...; }; Update: { ...; }; Relationships: []; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Argument of type '({ user_id: any; financial_account_id: any; amount: number; type: string; status: string; description: string; related_reservation_id: string; balance_before: any; balance_after: number; } | { ...; })[]' is not assignable to parameter of type 'never'.
+src/stripe.ts(649,30): error TS2339: Property 'user_id' does not exist on type 'never'.
+src/stripe.ts(650,39): error TS2339: Property 'id' does not exist on type 'never'.
+src/stripe.ts(656,33): error TS2339: Property 'balance' does not exist on type 'never'.
+src/stripe.ts(657,32): error TS2339: Property 'balance' does not exist on type 'never'.
+src/stripe.ts(662,36): error TS2339: Property 'user_id' does not exist on type 'never'.
+src/stripe.ts(663,45): error TS2339: Property 'id' does not exist on type 'never'.
+src/stripe.ts(669,39): error TS2339: Property 'balance' does not exist on type 'never'.
+src/stripe.ts(670,38): error TS2339: Property 'balance' does not exist on type 'never'.
+src/stripe.ts(679,15): error TS2345: Argument of type '{ status: string; deposit_status: string; food_order_status: string; }' is not assignable to parameter of type 'never'.
+src/stripe.ts(714,17): error TS2339: Property 'available_balance' does not exist on type 'never'.
+src/stripe.ts(721,36): error TS2339: Property 'stripe_financial_account_id' does not exist on type 'never'.
+src/stripe.ts(722,45): error TS2339: Property 'external_bank_account_id' does not exist on type 'never'.
+src/stripe.ts(728,32): error TS2339: Property 'stripe_account_id' does not exist on type 'never'.
+src/stripe.ts(735,15): error TS2345: Argument of type '{ available_balance: number; balance: number; }' is not assignable to parameter of type 'never'.
+src/stripe.ts(736,36): error TS2339: Property 'available_balance' does not exist on type 'never'.
+src/stripe.ts(737,26): error TS2339: Property 'balance' does not exist on type 'never'.
+src/stripe.ts(742,64): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { Row: { id: string; ... 20 more ...; updated_at: string | null; }; Insert: { ...; }; Update: { ...; }; Relationships: []; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Argument of type '{ user_id: string; financial_account_id: any; amount: number; type: string; status: string; description: string; stripe_transfer_id: string; balance_before: any; balance_after: number; }' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, { Tables: { early_access_waitlist: { ...; }; }; Views: Record<...>; Functions: { ...; }; Enums: Record<...>; }, ... 4 more ..., "POST">', gave the following error.
+    Object literal may only specify known properties, and 'user_id' does not exist in type 'never[]'.
+src/stripe.ts(744,37): error TS2339: Property 'id' does not exist on type 'never'.
+src/stripe.ts(750,31): error TS2339: Property 'balance' does not exist on type 'never'.
+src/stripe.ts(751,30): error TS2339: Property 'balance' does not exist on type 'never'.
+src/stripe.ts(857,7): error TS2345: Argument of type '"get_user_country"' is not assignable to parameter of type '"get_waitlist_stats"'.
+src/stripe.ts(873,48): error TS2345: Argument of type '{ total_signups: number | null; pending_count: number | null; invited_count: number | null; onboarded_count: number | null; signups_last_7_days: number | null; signups_last_30_days: number | null; top_sources: Json; }[]' is not assignable to parameter of type 'string'.
+src/stripe.ts(879,9): error TS2322: Type '{ total_signups: number | null; pending_count: number | null; invited_count: number | null; onboarded_count: number | null; signups_last_7_days: number | null; signups_last_30_days: number | null; top_sources: Json; }[]' is not assignable to type 'string'.
+src/stripe.ts(887,7): error TS2322: Type '{ total_signups: number | null; pending_count: number | null; invited_count: number | null; onboarded_count: number | null; signups_last_7_days: number | null; signups_last_30_days: number | null; top_sources: Json; }[]' is not assignable to type 'string'.
+ ELIFECYCLE  Command failed with exit code 2.

@@ -1,0 +1,24 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {
+      "offset": {
+        "line": 4,
+        "column": 0
+      },
+      "map": {
+        "version": 3,
+        "sources": [
+          "file:///Users/joezeiad/Desktop/Workspace/table-shift/packages/ui/src/separator.tsx"
+        ],
+        "sourcesContent": [
+          "\"use client\";\n\nimport { Separator as SeparatorPrimitive } from \"radix-ui\";\n\nimport { cn } from \"@trading-platform/ui\";\n\nexport function Separator({\n  className,\n  orientation = \"horizontal\",\n  decorative = true,\n  ...props\n}: React.ComponentProps<typeof SeparatorPrimitive.Root>) {\n  return (\n    <SeparatorPrimitive.Root\n      data-slot=\"separator\"\n      decorative={decorative}\n      orientation={orientation}\n      className={cn(\n        \"bg-border shrink-0 data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-px\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n"
+        ],
+        "names": [],
+        "mappings": ";;;;;AAEA;AAEA;AAJA;;;;AAMO,SAAS,UAAU,EACxB,SAAS,EACT,cAAc,YAAY,EAC1B,aAAa,IAAI,EACjB,GAAG,OACkD;IACrD,qBACE,iaAAC,waAAkB,CAAC,IAAI;QACtB,aAAU;QACV,YAAY;QACZ,aAAa;QACb,WAAW,IAAA,oIAAE,EACX,kKACA;QAED,GAAG,KAAK;;;;;;AAGf",
+        "debugId": null
+      }
+    }
+  ]
+}

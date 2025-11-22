@@ -1,0 +1,8 @@
+
+> @trading-platform/landing@ dev /Users/joezeiad/Desktop/Workspace/trading-platform/apps/web/landing
+> pnpm with-env next dev
+
+
+> @trading-platform/landing@ with-env /Users/joezeiad/Desktop/Workspace/trading-platform/apps/web/landing
+> dotenv -e ../../.env -- next dev
+

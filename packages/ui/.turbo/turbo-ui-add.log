@@ -1,0 +1,717 @@
+
+> @trading-platform/ui@ ui-add /Users/joezeiad/Desktop/Workspace/table-shift/packages/ui
+> pnpm dlx shadcn@latest add && prettier src --write --list-different
+
+Progress: resolved [96m1[39m, reused [96m0[39m, downloaded [96m0[39m, added [96m0[39m
+[1AProgress: resolved [96m5[39m, reused [96m1[39m, downloaded [96m0[39m, added [96m0[39m
+[1AProgress: resolved [96m23[39m, reused [96m21[39m, downloaded [96m0[39m, added [96m0[39m
+[1AProgress: resolved [96m30[39m, reused [96m28[39m, downloaded [96m0[39m, added [96m0[39m
+[1AProgress: resolved [96m56[39m, reused [96m53[39m, downloaded [96m0[39m, added [96m0[39m
+[1AProgress: resolved [96m82[39m, reused [96m78[39m, downloaded [96m2[39m, added [96m0[39m
+[1AProgress: resolved [96m99[39m, reused [96m94[39m, downloaded [96m2[39m, added [96m0[39m
+[1AProgress: resolved [96m113[39m, reused [96m107[39m, downloaded [96m5[39m, added [96m0[39m
+[1AProgress: resolved [96m132[39m, reused [96m124[39m, downloaded [96m6[39m, added [96m0[39m
+[1AProgress: resolved [96m161[39m, reused [96m150[39m, downloaded [96m7[39m, added [96m0[39m
+[1AProgress: resolved [96m186[39m, reused [96m177[39m, downloaded [96m8[39m, added [96m0[39m
+[1AProgress: resolved [96m213[39m, reused [96m200[39m, downloaded [96m11[39m, added [96m0[39m
+[1AProgress: resolved [96m244[39m, reused [96m232[39m, downloaded [96m11[39m, added [96m0[39m
+[1AProgress: resolved [96m288[39m, reused [96m272[39m, downloaded [96m14[39m, added [96m0[39m
+[1AProgress: resolved [96m307[39m, reused [96m291[39m, downloaded [96m16[39m, added [96m0[39m
+[1A[43m[30m WARN [39m[49m [31m1 deprecated subdependencies found:[39m node-domexception@1.0.0
+Progress: resolved [96m307[39m, reused [96m291[39m, downloaded [96m16[39m, added [96m0[39m
+[1APackages: [32m+319[39m[0K
+[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m[32m+[39m
+Progress: resolved [96m307[39m, reused [96m291[39m, downloaded [96m16[39m, added [96m0[39m
+[1AProgress: resolved [96m319[39m, reused [96m303[39m, downloaded [96m16[39m, added [96m17[39m
+[1AProgress: resolved [96m319[39m, reused [96m303[39m, downloaded [96m16[39m, added [96m109[39m
+[1AProgress: resolved [96m319[39m, reused [96m303[39m, downloaded [96m16[39m, added [96m175[39m
+[1AProgress: resolved [96m319[39m, reused [96m303[39m, downloaded [96m16[39m, added [96m287[39m
+[1AProgress: resolved [96m319[39m, reused [96m303[39m, downloaded [96m16[39m, added [96m319[39m, done
+[?25l[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯   [36m[4maccordion[39m[24m[90m[39m
+◯   alert[90m[39m
+◯   alert-dialog[90m[39m
+◯   aspect-ratio[90m[39m
+◯   avatar[90m[39m
+◯   badge[90m[39m
+◯   breadcrumb[90m[39m
+◯   button[90m[39m
+◯   button-group[90m[39m
+◯ ↓ calendar[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯   accordion[90m[39m
+◯   [36m[4malert[39m[24m[90m[39m
+◯   alert-dialog[90m[39m
+◯   aspect-ratio[90m[39m
+◯   avatar[90m[39m
+◯   badge[90m[39m
+◯   breadcrumb[90m[39m
+◯   button[90m[39m
+◯   button-group[90m[39m
+◯ ↓ calendar[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯   accordion[90m[39m
+◯   alert[90m[39m
+◯   [36m[4malert-dialog[39m[24m[90m[39m
+◯   aspect-ratio[90m[39m
+◯   avatar[90m[39m
+◯   badge[90m[39m
+◯   breadcrumb[90m[39m
+◯   button[90m[39m
+◯   button-group[90m[39m
+◯ ↓ calendar[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯   accordion[90m[39m
+◯   alert[90m[39m
+◯   alert-dialog[90m[39m
+◯   [36m[4maspect-ratio[39m[24m[90m[39m
+◯   avatar[90m[39m
+◯   badge[90m[39m
+◯   breadcrumb[90m[39m
+◯   button[90m[39m
+◯   button-group[90m[39m
+◯ ↓ calendar[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯   accordion[90m[39m
+◯   alert[90m[39m
+◯   alert-dialog[90m[39m
+◯   aspect-ratio[90m[39m
+◯   [36m[4mavatar[39m[24m[90m[39m
+◯   badge[90m[39m
+◯   breadcrumb[90m[39m
+◯   button[90m[39m
+◯   button-group[90m[39m
+◯ ↓ calendar[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯   accordion[90m[39m
+◯   alert[90m[39m
+◯   alert-dialog[90m[39m
+◯   aspect-ratio[90m[39m
+◯   avatar[90m[39m
+◯   [36m[4mbadge[39m[24m[90m[39m
+◯   breadcrumb[90m[39m
+◯   button[90m[39m
+◯   button-group[90m[39m
+◯ ↓ calendar[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ alert[90m[39m
+◯   alert-dialog[90m[39m
+◯   aspect-ratio[90m[39m
+◯   avatar[90m[39m
+◯   badge[90m[39m
+◯   [36m[4mbreadcrumb[39m[24m[90m[39m
+◯   button[90m[39m
+◯   button-group[90m[39m
+◯   calendar[90m[39m
+◯ ↓ card[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ alert-dialog[90m[39m
+◯   aspect-ratio[90m[39m
+◯   avatar[90m[39m
+◯   badge[90m[39m
+◯   breadcrumb[90m[39m
+◯   [36m[4mbutton[39m[24m[90m[39m
+◯   button-group[90m[39m
+◯   calendar[90m[39m
+◯   card[90m[39m
+◯ ↓ carousel[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ aspect-ratio[90m[39m
+◯   avatar[90m[39m
+◯   badge[90m[39m
+◯   breadcrumb[90m[39m
+◯   button[90m[39m
+◯   [36m[4mbutton-group[39m[24m[90m[39m
+◯   calendar[90m[39m
+◯   card[90m[39m
+◯   carousel[90m[39m
+◯ ↓ chart[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ avatar[90m[39m
+◯   badge[90m[39m
+◯   breadcrumb[90m[39m
+◯   button[90m[39m
+◯   button-group[90m[39m
+◯   [36m[4mcalendar[39m[24m[90m[39m
+◯   card[90m[39m
+◯   carousel[90m[39m
+◯   chart[90m[39m
+◯ ↓ checkbox[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ badge[90m[39m
+◯   breadcrumb[90m[39m
+◯   button[90m[39m
+◯   button-group[90m[39m
+◯   calendar[90m[39m
+◯   [36m[4mcard[39m[24m[90m[39m
+◯   carousel[90m[39m
+◯   chart[90m[39m
+◯   checkbox[90m[39m
+◯ ↓ collapsible[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ breadcrumb[90m[39m
+◯   button[90m[39m
+◯   button-group[90m[39m
+◯   calendar[90m[39m
+◯   card[90m[39m
+◯   [36m[4mcarousel[39m[24m[90m[39m
+◯   chart[90m[39m
+◯   checkbox[90m[39m
+◯   collapsible[90m[39m
+◯ ↓ command[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ button[90m[39m
+◯   button-group[90m[39m
+◯   calendar[90m[39m
+◯   card[90m[39m
+◯   carousel[90m[39m
+◯   [36m[4mchart[39m[24m[90m[39m
+◯   checkbox[90m[39m
+◯   collapsible[90m[39m
+◯   command[90m[39m
+◯ ↓ context-menu[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ button-group[90m[39m
+◯   calendar[90m[39m
+◯   card[90m[39m
+◯   carousel[90m[39m
+◯   chart[90m[39m
+◯   [36m[4mcheckbox[39m[24m[90m[39m
+◯   collapsible[90m[39m
+◯   command[90m[39m
+◯   context-menu[90m[39m
+◯ ↓ dialog[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ calendar[90m[39m
+◯   card[90m[39m
+◯   carousel[90m[39m
+◯   chart[90m[39m
+◯   checkbox[90m[39m
+◯   [36m[4mcollapsible[39m[24m[90m[39m
+◯   command[90m[39m
+◯   context-menu[90m[39m
+◯   dialog[90m[39m
+◯ ↓ drawer[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ card[90m[39m
+◯   carousel[90m[39m
+◯   chart[90m[39m
+◯   checkbox[90m[39m
+◯   collapsible[90m[39m
+◯   [36m[4mcommand[39m[24m[90m[39m
+◯   context-menu[90m[39m
+◯   dialog[90m[39m
+◯   drawer[90m[39m
+◯ ↓ dropdown-menu[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ carousel[90m[39m
+◯   chart[90m[39m
+◯   checkbox[90m[39m
+◯   collapsible[90m[39m
+◯   command[90m[39m
+◯   [36m[4mcontext-menu[39m[24m[90m[39m
+◯   dialog[90m[39m
+◯   drawer[90m[39m
+◯   dropdown-menu[90m[39m
+◯ ↓ empty[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ chart[90m[39m
+◯   checkbox[90m[39m
+◯   collapsible[90m[39m
+◯   command[90m[39m
+◯   context-menu[90m[39m
+◯   [36m[4mdialog[39m[24m[90m[39m
+◯   drawer[90m[39m
+◯   dropdown-menu[90m[39m
+◯   empty[90m[39m
+◯ ↓ field[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ checkbox[90m[39m
+◯   collapsible[90m[39m
+◯   command[90m[39m
+◯   context-menu[90m[39m
+◯   dialog[90m[39m
+◯   [36m[4mdrawer[39m[24m[90m[39m
+◯   dropdown-menu[90m[39m
+◯   empty[90m[39m
+◯   field[90m[39m
+◯ ↓ form[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ collapsible[90m[39m
+◯   command[90m[39m
+◯   context-menu[90m[39m
+◯   dialog[90m[39m
+◯   drawer[90m[39m
+◯   [36m[4mdropdown-menu[39m[24m[90m[39m
+◯   empty[90m[39m
+◯   field[90m[39m
+◯   form[90m[39m
+◯ ↓ hover-card[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ command[90m[39m
+◯   context-menu[90m[39m
+◯   dialog[90m[39m
+◯   drawer[90m[39m
+◯   dropdown-menu[90m[39m
+◯   [36m[4mempty[39m[24m[90m[39m
+◯   field[90m[39m
+◯   form[90m[39m
+◯   hover-card[90m[39m
+◯ ↓ input[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ context-menu[90m[39m
+◯   dialog[90m[39m
+◯   drawer[90m[39m
+◯   dropdown-menu[90m[39m
+◯   empty[90m[39m
+◯   [36m[4mfield[39m[24m[90m[39m
+◯   form[90m[39m
+◯   hover-card[90m[39m
+◯   input[90m[39m
+◯ ↓ input-group[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ dialog[90m[39m
+◯   drawer[90m[39m
+◯   dropdown-menu[90m[39m
+◯   empty[90m[39m
+◯   field[90m[39m
+◯   [36m[4mform[39m[24m[90m[39m
+◯   hover-card[90m[39m
+◯   input[90m[39m
+◯   input-group[90m[39m
+◯ ↓ input-otp[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ drawer[90m[39m
+◯   dropdown-menu[90m[39m
+◯   empty[90m[39m
+◯   field[90m[39m
+◯   form[90m[39m
+◯   [36m[4mhover-card[39m[24m[90m[39m
+◯   input[90m[39m
+◯   input-group[90m[39m
+◯   input-otp[90m[39m
+◯ ↓ item[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ dropdown-menu[90m[39m
+◯   empty[90m[39m
+◯   field[90m[39m
+◯   form[90m[39m
+◯   hover-card[90m[39m
+◯   [36m[4minput[39m[24m[90m[39m
+◯   input-group[90m[39m
+◯   input-otp[90m[39m
+◯   item[90m[39m
+◯ ↓ kbd[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ empty[90m[39m
+◯   field[90m[39m
+◯   form[90m[39m
+◯   hover-card[90m[39m
+◯   input[90m[39m
+◯   [36m[4minput-group[39m[24m[90m[39m
+◯   input-otp[90m[39m
+◯   item[90m[39m
+◯   kbd[90m[39m
+◯ ↓ label[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ field[90m[39m
+◯   form[90m[39m
+◯   hover-card[90m[39m
+◯   input[90m[39m
+◯   input-group[90m[39m
+◯   [36m[4minput-otp[39m[24m[90m[39m
+◯   item[90m[39m
+◯   kbd[90m[39m
+◯   label[90m[39m
+◯ ↓ menubar[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ form[90m[39m
+◯   hover-card[90m[39m
+◯   input[90m[39m
+◯   input-group[90m[39m
+◯   input-otp[90m[39m
+◯   [36m[4mitem[39m[24m[90m[39m
+◯   kbd[90m[39m
+◯   label[90m[39m
+◯   menubar[90m[39m
+◯ ↓ navigation-menu[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ hover-card[90m[39m
+◯   input[90m[39m
+◯   input-group[90m[39m
+◯   input-otp[90m[39m
+◯   item[90m[39m
+◯   [36m[4mkbd[39m[24m[90m[39m
+◯   label[90m[39m
+◯   menubar[90m[39m
+◯   navigation-menu[90m[39m
+◯ ↓ pagination[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ input[90m[39m
+◯   input-group[90m[39m
+◯   input-otp[90m[39m
+◯   item[90m[39m
+◯   kbd[90m[39m
+◯   [36m[4mlabel[39m[24m[90m[39m
+◯   menubar[90m[39m
+◯   navigation-menu[90m[39m
+◯   pagination[90m[39m
+◯ ↓ popover[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ input-group[90m[39m
+◯   input-otp[90m[39m
+◯   item[90m[39m
+◯   kbd[90m[39m
+◯   label[90m[39m
+◯   [36m[4mmenubar[39m[24m[90m[39m
+◯   navigation-menu[90m[39m
+◯   pagination[90m[39m
+◯   popover[90m[39m
+◯ ↓ progress[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ input-otp[90m[39m
+◯   item[90m[39m
+◯   kbd[90m[39m
+◯   label[90m[39m
+◯   menubar[90m[39m
+◯   [36m[4mnavigation-menu[39m[24m[90m[39m
+◯   pagination[90m[39m
+◯   popover[90m[39m
+◯   progress[90m[39m
+◯ ↓ radio-group[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ item[90m[39m
+◯   kbd[90m[39m
+◯   label[90m[39m
+◯   menubar[90m[39m
+◯   navigation-menu[90m[39m
+◯   [36m[4mpagination[39m[24m[90m[39m
+◯   popover[90m[39m
+◯   progress[90m[39m
+◯   radio-group[90m[39m
+◯ ↓ resizable[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ kbd[90m[39m
+◯   label[90m[39m
+◯   menubar[90m[39m
+◯   navigation-menu[90m[39m
+◯   pagination[90m[39m
+◯   [36m[4mpopover[39m[24m[90m[39m
+◯   progress[90m[39m
+◯   radio-group[90m[39m
+◯   resizable[90m[39m
+◯ ↓ scroll-area[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ label[90m[39m
+◯   menubar[90m[39m
+◯   navigation-menu[90m[39m
+◯   pagination[90m[39m
+◯   popover[90m[39m
+◯   [36m[4mprogress[39m[24m[90m[39m
+◯   radio-group[90m[39m
+◯   resizable[90m[39m
+◯   scroll-area[90m[39m
+◯ ↓ select[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ menubar[90m[39m
+◯   navigation-menu[90m[39m
+◯   pagination[90m[39m
+◯   popover[90m[39m
+◯   progress[90m[39m
+◯   [36m[4mradio-group[39m[24m[90m[39m
+◯   resizable[90m[39m
+◯   scroll-area[90m[39m
+◯   select[90m[39m
+◯ ↓ separator[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ navigation-menu[90m[39m
+◯   pagination[90m[39m
+◯   popover[90m[39m
+◯   progress[90m[39m
+◯   radio-group[90m[39m
+◯   [36m[4mresizable[39m[24m[90m[39m
+◯   scroll-area[90m[39m
+◯   select[90m[39m
+◯   separator[90m[39m
+◯ ↓ sheet[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ pagination[90m[39m
+◯   popover[90m[39m
+◯   progress[90m[39m
+◯   radio-group[90m[39m
+◯   resizable[90m[39m
+◯   [36m[4mscroll-area[39m[24m[90m[39m
+◯   select[90m[39m
+◯   separator[90m[39m
+◯   sheet[90m[39m
+◯ ↓ sidebar[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ popover[90m[39m
+◯   progress[90m[39m
+◯   radio-group[90m[39m
+◯   resizable[90m[39m
+◯   scroll-area[90m[39m
+◯   [36m[4mselect[39m[24m[90m[39m
+◯   separator[90m[39m
+◯   sheet[90m[39m
+◯   sidebar[90m[39m
+◯ ↓ skeleton[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ progress[90m[39m
+◯   radio-group[90m[39m
+◯   resizable[90m[39m
+◯   scroll-area[90m[39m
+◯   select[90m[39m
+◯   [36m[4mseparator[39m[24m[90m[39m
+◯   sheet[90m[39m
+◯   sidebar[90m[39m
+◯   skeleton[90m[39m
+◯ ↓ slider[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ radio-group[90m[39m
+◯   resizable[90m[39m
+◯   scroll-area[90m[39m
+◯   select[90m[39m
+◯   separator[90m[39m
+◯   [36m[4msheet[39m[24m[90m[39m
+◯   sidebar[90m[39m
+◯   skeleton[90m[39m
+◯   slider[90m[39m
+◯ ↓ sonner[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ resizable[90m[39m
+◯   scroll-area[90m[39m
+◯   select[90m[39m
+◯   separator[90m[39m
+◯   sheet[90m[39m
+◯   [36m[4msidebar[39m[24m[90m[39m
+◯   skeleton[90m[39m
+◯   slider[90m[39m
+◯   sonner[90m[39m
+◯ ↓ spinner[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ scroll-area[90m[39m
+◯   select[90m[39m
+◯   separator[90m[39m
+◯   sheet[90m[39m
+◯   sidebar[90m[39m
+◯   [36m[4mskeleton[39m[24m[90m[39m
+◯   slider[90m[39m
+◯   sonner[90m[39m
+◯   spinner[90m[39m
+◯ ↓ switch[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ select[90m[39m
+◯   separator[90m[39m
+◯   sheet[90m[39m
+◯   sidebar[90m[39m
+◯   skeleton[90m[39m
+◯   [36m[4mslider[39m[24m[90m[39m
+◯   sonner[90m[39m
+◯   spinner[90m[39m
+◯   switch[90m[39m
+◯ ↓ table[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ separator[90m[39m
+◯   sheet[90m[39m
+◯   sidebar[90m[39m
+◯   skeleton[90m[39m
+◯   slider[90m[39m
+◯   [36m[4msonner[39m[24m[90m[39m
+◯   spinner[90m[39m
+◯   switch[90m[39m
+◯   table[90m[39m
+◯ ↓ tabs[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ sheet[90m[39m
+◯   sidebar[90m[39m
+◯   skeleton[90m[39m
+◯   slider[90m[39m
+◯   sonner[90m[39m
+◯   [36m[4mspinner[39m[24m[90m[39m
+◯   switch[90m[39m
+◯   table[90m[39m
+◯   tabs[90m[39m
+◯ ↓ textarea[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ sidebar[90m[39m
+◯   skeleton[90m[39m
+◯   slider[90m[39m
+◯   sonner[90m[39m
+◯   spinner[90m[39m
+◯   [36m[4mswitch[39m[24m[90m[39m
+◯   table[90m[39m
+◯   tabs[90m[39m
+◯   textarea[90m[39m
+◯ ↓ toggle[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ skeleton[90m[39m
+◯   slider[90m[39m
+◯   sonner[90m[39m
+◯   spinner[90m[39m
+◯   switch[90m[39m
+◯   [36m[4mtable[39m[24m[90m[39m
+◯   tabs[90m[39m
+◯   textarea[90m[39m
+◯   toggle[90m[39m
+◯ ↓ toggle-group[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ slider[90m[39m
+◯   sonner[90m[39m
+◯   spinner[90m[39m
+◯   switch[90m[39m
+◯   table[90m[39m
+◯   [36m[4mtabs[39m[24m[90m[39m
+◯   textarea[90m[39m
+◯   toggle[90m[39m
+◯   toggle-group[90m[39m
+◯   tooltip[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ slider[90m[39m
+◯   sonner[90m[39m
+◯   spinner[90m[39m
+◯   switch[90m[39m
+◯   table[90m[39m
+◯   tabs[90m[39m
+◯   [36m[4mtextarea[39m[24m[90m[39m
+◯   toggle[90m[39m
+◯   toggle-group[90m[39m
+◯   tooltip[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ slider[90m[39m
+◯   sonner[90m[39m
+◯   spinner[90m[39m
+◯   switch[90m[39m
+◯   table[90m[39m
+◯   tabs[90m[39m
+◯   textarea[90m[39m
+◯   [36m[4mtoggle[39m[24m[90m[39m
+◯   toggle-group[90m[39m
+◯   tooltip[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ slider[90m[39m
+◯   sonner[90m[39m
+◯   spinner[90m[39m
+◯   switch[90m[39m
+◯   table[90m[39m
+◯   tabs[90m[39m
+◯   textarea[90m[39m
+◯   toggle[90m[39m
+◯   [36m[4mtoggle-group[39m[24m[90m[39m
+◯   tooltip[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ slider[90m[39m
+◯   sonner[90m[39m
+◯   spinner[90m[39m
+◯   switch[90m[39m
+◯   table[90m[39m
+◯   tabs[90m[39m
+◯   textarea[90m[39m
+◯   toggle[90m[39m
+◯   toggle-group[90m[39m
+◯   [36m[4mtooltip[39m[24m[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯   [36m[4maccordion[39m[24m[90m[39m
+◯   alert[90m[39m
+◯   alert-dialog[90m[39m
+◯   aspect-ratio[90m[39m
+◯   avatar[90m[39m
+◯   badge[90m[39m
+◯   breadcrumb[90m[39m
+◯   button[90m[39m
+◯   button-group[90m[39m
+◯ ↓ calendar[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ slider[90m[39m
+◯   sonner[90m[39m
+◯   spinner[90m[39m
+◯   switch[90m[39m
+◯   table[90m[39m
+◯   tabs[90m[39m
+◯   textarea[90m[39m
+◯   toggle[90m[39m
+◯   toggle-group[90m[39m
+◯   [36m[4mtooltip[39m[24m[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ slider[90m[39m
+◯   sonner[90m[39m
+◯   spinner[90m[39m
+◯   switch[90m[39m
+◯   table[90m[39m
+◯   tabs[90m[39m
+◯   textarea[90m[39m
+◯   toggle[90m[39m
+◯   [36m[4mtoggle-group[39m[24m[90m[39m
+◯   tooltip[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ slider[90m[39m
+◯   sonner[90m[39m
+◯   spinner[90m[39m
+◯   switch[90m[39m
+◯   table[90m[39m
+◯   tabs[90m[39m
+◯   textarea[90m[39m
+◯   [36m[4mtoggle[39m[24m[90m[39m
+◯   toggle-group[90m[39m
+◯   tooltip[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ slider[90m[39m
+◯   sonner[90m[39m
+◯   spinner[90m[39m
+◯   switch[90m[39m
+◯   table[90m[39m
+◯   tabs[90m[39m
+◯   [36m[4mtextarea[39m[24m[90m[39m
+◯   toggle[90m[39m
+◯   toggle-group[90m[39m
+◯   tooltip[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ slider[90m[39m
+◯   sonner[90m[39m
+◯   spinner[90m[39m
+◯   switch[90m[39m
+◯   table[90m[39m
+◯   [36m[4mtabs[39m[24m[90m[39m
+◯   textarea[90m[39m
+◯   toggle[90m[39m
+◯   toggle-group[90m[39m
+◯   tooltip[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ skeleton[90m[39m
+◯   slider[90m[39m
+◯   sonner[90m[39m
+◯   spinner[90m[39m
+◯   switch[90m[39m
+◯   [36m[4mtable[39m[24m[90m[39m
+◯   tabs[90m[39m
+◯   textarea[90m[39m
+◯   toggle[90m[39m
+◯ ↓ toggle-group[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ slider[90m[39m
+◯   sonner[90m[39m
+◯   spinner[90m[39m
+◯   switch[90m[39m
+◯   table[90m[39m
+◯   [36m[4mtabs[39m[24m[90m[39m
+◯   textarea[90m[39m
+◯   toggle[90m[39m
+◯   toggle-group[90m[39m
+◯   tooltip[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ slider[90m[39m
+◯   sonner[90m[39m
+◯   spinner[90m[39m
+◯   switch[90m[39m
+◯   table[90m[39m
+◯   tabs[90m[39m
+◯   [36m[4mtextarea[39m[24m[90m[39m
+◯   toggle[90m[39m
+◯   toggle-group[90m[39m
+◯   tooltip[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ slider[90m[39m
+◯   sonner[90m[39m
+◯   spinner[90m[39m
+◯   switch[90m[39m
+◯   table[90m[39m
+◯   [36m[4mtabs[39m[24m[90m[39m
+◯   textarea[90m[39m
+◯   toggle[90m[39m
+◯   toggle-group[90m[39m
+◯   tooltip[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ skeleton[90m[39m
+◯   slider[90m[39m
+◯   sonner[90m[39m
+◯   spinner[90m[39m
+◯   switch[90m[39m
+◯   [36m[4mtable[39m[24m[90m[39m
+◯   tabs[90m[39m
+◯   textarea[90m[39m
+◯   toggle[90m[39m
+◯ ↓ toggle-group[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ sidebar[90m[39m
+◯   skeleton[90m[39m
+◯   slider[90m[39m
+◯   sonner[90m[39m
+◯   spinner[90m[39m
+◯   [36m[4mswitch[39m[24m[90m[39m
+◯   table[90m[39m
+◯   tabs[90m[39m
+◯   textarea[90m[39m
+◯ ↓ toggle[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ sheet[90m[39m
+◯   sidebar[90m[39m
+◯   skeleton[90m[39m
+◯   slider[90m[39m
+◯   sonner[90m[39m
+◯   [36m[4mspinner[39m[24m[90m[39m
+◯   switch[90m[39m
+◯   table[90m[39m
+◯   tabs[90m[39m
+◯ ↓ textarea[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ separator[90m[39m
+◯   sheet[90m[39m
+◯   sidebar[90m[39m
+◯   skeleton[90m[39m
+◯   slider[90m[39m
+◯   [36m[4msonner[39m[24m[90m[39m
+◯   spinner[90m[39m
+◯   switch[90m[39m
+◯   table[90m[39m
+◯ ↓ tabs[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[36m?[39m [1mWhich components would you like to add?[22m [90m›[39m [90mSpace to select. A to toggle all. Enter to submit.[39m
+◯ ↑ separator[90m[39m
+◯   sheet[90m[39m
+◯   sidebar[90m[39m
+◯   skeleton[90m[39m
+◯   slider[90m[39m
+[32m◉[39m   [36m[4msonner[39m[24m[90m[39m
+◯   spinner[90m[39m
+◯   switch[90m[39m
+◯   table[90m[39m
+◯ ↓ tabs[90m[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[32m✔[39m [1mWhich components would you like to add?[22m [90m›[39m sonner
+[?25h[?25l[1G[1G[36m⠋[39m Checking registry.[1G[0K[36m⠙[39m Checking registry.[1G[0K[?25h[32m✔[39m Checking registry.
+[?25l[1G[1G[36m⠋[39m Installing dependencies.[1G[0K[36m⠙[39m Installing dependencies.[1G[0K[36m⠹[39m Installing dependencies.[1G[0K[36m⠸[39m Installing dependencies.[1G[0K[36m⠼[39m Installing dependencies.[1G[0K[36m⠴[39m Installing dependencies.[1G[0K[36m⠦[39m Installing dependencies.[1G[0K[36m⠧[39m Installing dependencies.[1G[0K[36m⠇[39m Installing dependencies.[1G[0K[36m⠏[39m Installing dependencies.[1G[0K[36m⠋[39m Installing dependencies.[1G[0K[36m⠙[39m Installing dependencies.[1G[0K[36m⠹[39m Installing dependencies.[1G[0K[36m⠸[39m Installing dependencies.[1G[0K[36m⠼[39m Installing dependencies.[1G[0K[36m⠴[39m Installing dependencies.[1G[0K[36m⠦[39m Installing dependencies.[1G[0K[36m⠧[39m Installing dependencies.[1G[0K[36m⠇[39m Installing dependencies.[1G[0K[36m⠏[39m Installing dependencies.[1G[0K[36m⠋[39m Installing dependencies.[1G[0K[36m⠙[39m Installing dependencies.[1G[0K[36m⠹[39m Installing dependencies.[1G[0K[36m⠸[39m Installing dependencies.[1G[0K[36m⠼[39m Installing dependencies.[1G[0K[36m⠴[39m Installing dependencies.[1G[0K[36m⠦[39m Installing dependencies.[1G[0K[36m⠧[39m Installing dependencies.[1G[0K[36m⠇[39m Installing dependencies.[1G[0K[36m⠏[39m Installing dependencies.[1G[0K[36m⠋[39m Installing dependencies.[1G[0K[36m⠙[39m Installing dependencies.[1G[0K[36m⠹[39m Installing dependencies.[1G[0K[36m⠸[39m Installing dependencies.[1G[0K[36m⠼[39m Installing dependencies.[1G[0K[36m⠴[39m Installing dependencies.[1G[0K[36m⠦[39m Installing dependencies.[1G[0K[36m⠧[39m Installing dependencies.[1G[0K[36m⠇[39m Installing dependencies.[1G[0K[36m⠏[39m Installing dependencies.[1G[0K[36m⠋[39m Installing dependencies.[1G[0K[36m⠙[39m Installing dependencies.[1G[0K[36m⠹[39m Installing dependencies.[1G[0K[36m⠸[39m Installing dependencies.[1G[0K[36m⠼[39m Installing dependencies.[1G[0K[36m⠴[39m Installing dependencies.[1G[0K[36m⠦[39m Installing dependencies.[1G[0K[36m⠧[39m Installing dependencies.[1G[0K[36m⠇[39m Installing dependencies.[1G[0K[36m⠏[39m Installing dependencies.[1G[0K[36m⠋[39m Installing dependencies.[1G[0K[36m⠙[39m Installing dependencies.[1G[0K[36m⠹[39m Installing dependencies.[1G[0K[36m⠸[39m Installing dependencies.[1G[0K[36m⠼[39m Installing dependencies.[1G[0K[36m⠴[39m Installing dependencies.[1G[0K[36m⠦[39m Installing dependencies.[1G[0K[36m⠧[39m Installing dependencies.[1G[0K[36m⠇[39m Installing dependencies.[1G[0K[36m⠏[39m Installing dependencies.[1G[0K[36m⠋[39m Installing dependencies.[1G[0K[36m⠙[39m Installing dependencies.[1G[0K[36m⠹[39m Installing dependencies.[1G[0K[36m⠸[39m Installing dependencies.[1G[0K[36m⠼[39m Installing dependencies.[1G[0K[36m⠴[39m Installing dependencies.[1G[0K[36m⠦[39m Installing dependencies.[1G[0K[36m⠧[39m Installing dependencies.[1G[0K[36m⠇[39m Installing dependencies.[1G[0K[36m⠏[39m Installing dependencies.[1G[0K[36m⠋[39m Installing dependencies.[1G[0K[36m⠙[39m Installing dependencies.[1G[0K[36m⠹[39m Installing dependencies.[1G[0K[36m⠸[39m Installing dependencies.[1G[0K[36m⠼[39m Installing dependencies.[1G[0K[36m⠴[39m Installing dependencies.[1G[0K[36m⠦[39m Installing dependencies.[1G[0K[36m⠧[39m Installing dependencies.[1G[0K[36m⠇[39m Installing dependencies.[1G[0K[36m⠏[39m Installing dependencies.[1G[0K[36m⠋[39m Installing dependencies.[1G[0K[36m⠙[39m Installing dependencies.[1G[0K[36m⠹[39m Installing dependencies.[1G[0K[36m⠸[39m Installing dependencies.[1G[0K[36m⠼[39m Installing dependencies.[1G[0K[36m⠴[39m Installing dependencies.[1G[0K[36m⠦[39m Installing dependencies.[1G[0K[36m⠧[39m Installing dependencies.[1G[0K[36m⠇[39m Installing dependencies.[1G[0K[36m⠏[39m Installing dependencies.[1G[0K[36m⠋[39m Installing dependencies.[1G[0K[?25h[32m✔[39m Installing dependencies.
+[?25l[1G[1G[36m⠋[39m Updating files.[1G[0K[36m⠙[39m Updating files.[1G[0K[36m⠹[39m Updating files.[1G[0K[36m⠸[39m Updating files.[1G[0K[36m⠼[39m Updating files.[1G[0K[?25h[32m✔[39m Created 1 file:
+  - src/sonner.tsx
+
+[?25hsrc/accordion.tsx[2K[1Gsrc/badge.tsx[2K[1Gsrc/button.tsx[2K[1Gsrc/card.tsx[2K[1Gsrc/circular-progress.tsx[2K[1Gsrc/dialog.tsx[2K[1Gsrc/dropdown-menu.tsx[2K[1Gsrc/field.tsx[2K[1Gsrc/index.ts[2K[1Gsrc/input.tsx[2K[1Gsrc/label.tsx[2K[1Gsrc/progress.tsx[2K[1Gsrc/select.tsx[2K[1Gsrc/separator.tsx[2K[1Gsrc/sonner.tsx[2K[1Gsrc/sonner.tsx
+src/textarea.tsx[2K[1Gsrc/theme.tsx[2K[1Gsrc/toast.tsx[2K[1G

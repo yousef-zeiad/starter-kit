@@ -1,0 +1,41 @@
+{
+  "name": "create-t3-turbo",
+  "private": true,
+  "engines": {
+    "node": "^22.21.0",
+    "pnpm": "^10.19.0"
+  },
+  "packageManager": "pnpm@10.19.0",
+  "scripts": {
+    "build": "turbo run build",
+    "clean": "git clean -xdf node_modules",
+    "clean:workspaces": "turbo run clean",
+    "auth:generate": "pnpm -F @trading-platform/auth generate",
+    "db:types": "pnpm dlx supabase gen types typescript --project-id otbsdyjwkfetpapchowj > packages/db/src/types.ts",
+    "db:push": "turbo -F @trading-platform/db push",
+    "db:studio": "turbo -F @trading-platform/db studio",
+    "dev": "turbo watch dev --continue",
+    "dev:next": "turbo watch dev -F @trading-platform/nextjs...",
+    "format": "turbo run format --continue -- --cache --cache-location .cache/.prettiercache",
+    "format:fix": "turbo run format --continue -- --write --cache --cache-location .cache/.prettiercache",
+    "lint": "turbo run lint --continue -- --cache --cache-location .cache/.eslintcache",
+    "lint:fix": "turbo run lint --continue -- --fix --cache --cache-location .cache/.eslintcache",
+    "lint:ws": "pnpm dlx sherif@latest",
+    "postinstall": "pnpm lint:ws",
+    "typecheck": "turbo run typecheck",
+    "ui-add": "turbo run ui-add",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
+  },
+  "devDependencies": {
+    "@trading-platform/prettier-config": "workspace:*",
+    "@turbo/gen": "^2.6.0",
+    "dotenv-cli": "^10.0.0",
+    "prettier": "catalog:",
+    "stripe": "^19.1.0",
+    "supabase": "^2.53.6",
+    "turbo": "^2.6.0",
+    "typescript": "catalog:"
+  },
+  "prettier": "@trading-platform/prettier-config"
+}
